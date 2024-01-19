@@ -596,7 +596,6 @@ body{
         border: 2px solid #b79a09;
         width: 110%;
         padding-left: 10px;
-        background: #3c22ff;
     }
     #bodycontainer{
         .intro{
@@ -604,11 +603,12 @@ body{
                 width: 270px;
                 height: 270px;
                 min-height: 270px;
-                margin: 0px 0px 0px 5px;
+                margin: 0px auto;
             }
             .header-text{
                 padding: 0px;
-                margin: 0px 0px 50px 20px;
+                text-align: center;
+                margin: 0px 0px 50px 0px;
                 min-height: 0px;
                 h1{
                     font-size: 30px;
@@ -664,9 +664,10 @@ body{
             h1{
                 font-size: 25px;
                 line-height: 31px;
-                margin: 0px 0px 20px 0px;
+                margin: 0px 0px 20px 37%;
+                display: inline-block;
                 &::after{
-                    left: 93px;
+                    left: -4px;
                     width: 105px;
                 }
             }
@@ -681,18 +682,19 @@ body{
         .gallery{
             margin-top: 25%;
             h1{
-                margin: 0px 0px 20px 0px;
+                margin: 0px 0px 20px 37%;
                 font-size: 25px;
                 line-height: 31px;
+                display: inline-block;
                 &::after{
-                    left: 106px;
+                    left: 0px;
                     width: 80px;
                 }
             }
             .gallery-box{
                 padding: 30px;
                 .opacity{
-                    width: 200px;
+                    width: 87%;
                     bottom: 30px;
                     height: 130px;
                     padding: 20px 0px;
@@ -704,12 +706,13 @@ body{
         .contact{
             margin-top: 20%;
             h1{
-                margin: 0px 0px 20px 0px;
+                margin: 0px 0px 20px 30%;
                 font-size: 25px;
                 line-height: 31px;
+                display: inline-block;
                 &::after{
-                    left: 80px;
-                    width: 135px;
+                    left: 1px;
+                    width: 130px;
                 }
             }
             .details{
