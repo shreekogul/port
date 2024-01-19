@@ -1,0 +1,702 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 16rem;
+}
+
+body {
+  font-family: "Roboto-regular";
+  font-size: 14px;
+  line-height: 20px;
+  background: #080808;
+  color: white;
+}
+
+.to-top {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: gold;
+  color: #080808;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  outline: none;
+  border: none;
+  padding-bottom: 4px;
+  font-size: 20px;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+.to-top:hover, .to-top.active {
+  transform: rotate(0deg);
+}
+
+.brdr {
+  border: 1px solid white;
+}
+
+.clear {
+  clear: both;
+}
+
+#headercontainer {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin: 0px -15px;
+}
+#headercontainer .custom-navbar {
+  background: rgba(8, 8, 8, 0.6);
+}
+#headercontainer .custom-navbar .navbar-header .logo {
+  float: left;
+  display: block;
+}
+#headercontainer .custom-navbar .navbar-header .logo img {
+  width: 50%;
+  display: block;
+  margin: 20px 0px 0px 0px;
+}
+#headercontainer .custom-navbar .navbar-header .navbar-toggle {
+  border: 1px solid gold;
+  background-color: gold;
+}
+#headercontainer .custom-navbar .navbar-header .navbar-toggle span {
+  background-color: black;
+}
+#headercontainer .custom-navbar .nav li a {
+  font-size: 17px;
+  line-height: 24px;
+  color: white;
+  margin: 5px 20px 0px 0px;
+  text-align: center;
+  position: relative;
+  background: none;
+  padding: 15px 5px;
+  display: inline-block;
+}
+#headercontainer .custom-navbar .nav li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: gold;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  transition: 0.5s;
+}
+#headercontainer .custom-navbar .nav li a:hover, #headercontainer .custom-navbar .nav li a.active {
+  color: gold;
+}
+#headercontainer .custom-navbar .nav li a:hover::after, #headercontainer .custom-navbar .nav li a.active::after {
+  width: 100%;
+}
+
+#bodycontainer {
+  margin: 0px -15px;
+}
+#bodycontainer .intro {
+  margin-top: 15%;
+}
+#bodycontainer .intro .mypic {
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  overflow: hidden;
+  min-height: 320px;
+  margin: 0px 0px 0px 34%;
+}
+#bodycontainer .intro .mypic img {
+  width: 100%;
+  display: block;
+}
+#bodycontainer .intro .header-text {
+  padding: 60px 0px 50px 50px;
+  min-height: 320px;
+}
+#bodycontainer .intro .header-text h1 {
+  margin: 20px 0px;
+  font-size: 35px;
+  line-height: 41px;
+}
+#bodycontainer .intro .header-text h1 span {
+  color: gold;
+}
+#bodycontainer .intro .header-text .dynamic-txt {
+  margin: 0px 0px 40px 25px;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+}
+#bodycontainer .intro .header-text .dynamic-txt li {
+  list-style: none;
+  font-size: 26px;
+  color: gold;
+  position: relative;
+  top: 0px;
+  animation: slide 7s steps(2) infinite;
+}
+#bodycontainer .intro .header-text .dynamic-txt li span {
+  position: relative;
+}
+#bodycontainer .intro .header-text .dynamic-txt li span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #080808;
+  border-left: 2px solid gold;
+  left: 0px;
+  animation: typing 3.5s steps(14) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -65px;
+  }
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0px -15px 0px 15px;
+  }
+}
+#bodycontainer .intro .header-text button, #bodycontainer .intro .header-text a {
+  font-size: 17px;
+  line-height: 23px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #b79a09;
+  background: none;
+  outline: none;
+  color: gold;
+  margin: 0px 10px 0px 0px;
+}
+#bodycontainer .intro .header-text button:hover, #bodycontainer .intro .header-text button.active, #bodycontainer .intro .header-text a:hover, #bodycontainer .intro .header-text a.active {
+  background-color: gold;
+  color: black;
+  border: none;
+}
+#bodycontainer .intro .header-text button i, #bodycontainer .intro .header-text a i {
+  margin-left: 3px;
+}
+#bodycontainer .about {
+  margin-top: 15%;
+}
+#bodycontainer .about .heading {
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+#bodycontainer .about .heading a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  line-height: 31px;
+  margin-right: 40px;
+  position: relative;
+}
+#bodycontainer .about .heading a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: gold;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  transition: 0.5s;
+}
+#bodycontainer .about .heading a.active::after {
+  width: 100%;
+}
+#bodycontainer .about .about-brdr {
+  border: 2px solid #b79a09;
+  border-radius: 30px;
+  padding: 40px 30px;
+}
+#bodycontainer .about .mypic2 {
+  min-height: 325px;
+}
+#bodycontainer .about .mypic2 img {
+  width: 90%;
+  display: block;
+}
+#bodycontainer .about .about-txt {
+  min-height: 315px;
+  display: none;
+}
+#bodycontainer .about .about-txt .ptext {
+  margin: 5px 0px 10px 0px;
+  font-size: 15px;
+  line-height: 23px;
+}
+#bodycontainer .about .about-txt .ptext span {
+  color: gold;
+}
+#bodycontainer .about .about-txt.active {
+  display: block;
+}
+#bodycontainer .about .biodata {
+  text-align: center;
+  padding: 58px 0px;
+  min-height: 325px;
+  display: none;
+}
+#bodycontainer .about .biodata .education {
+  padding: 54px 0px;
+  width: 45%;
+  border-radius: 15px;
+  margin: 0px 45px 0px 15px;
+  border: 2px solid #b79a09;
+  float: left;
+}
+#bodycontainer .about .biodata .education .educa-p {
+  margin: 13px 0px;
+  font-size: 16px;
+  line-height: 22px;
+}
+#bodycontainer .about .biodata .education:hover {
+  box-shadow: 0px 0px 20px gold;
+}
+#bodycontainer .about .biodata .expreience {
+  padding: 33px 0px;
+  width: 45%;
+  border-radius: 15px;
+  border: 2px solid #b79a09;
+  float: left;
+}
+#bodycontainer .about .biodata .expreience:hover {
+  box-shadow: 0px 0px 20px gold;
+}
+#bodycontainer .about .biodata .expreience h3 {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 17px 0px 15px 0px;
+}
+#bodycontainer .about .biodata .expreience span {
+  display: block;
+  color: gold;
+  font-size: 18px;
+  line-height: 26px;
+}
+#bodycontainer .about .biodata .expreience .expre-p {
+  margin: 13px 0px;
+  font-size: 16px;
+  line-height: 22px;
+}
+#bodycontainer .about .biodata.active {
+  display: block;
+}
+#bodycontainer .skills {
+  margin-top: 15%;
+}
+#bodycontainer .skills h1 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  margin: 0px 0px 50px 0px;
+}
+#bodycontainer .skills h1::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  display: inline-block;
+  background: gold;
+  position: absolute;
+  left: 510px;
+  bottom: -5px;
+}
+#bodycontainer .skills .border {
+  border: 2px solid #b79a09;
+  padding: 40px 30px;
+  border-radius: 30px;
+}
+#bodycontainer .skills .border .skill-box {
+  width: 100%;
+  position: relative;
+  margin: 50px 0px;
+  padding: 0px 10px;
+}
+#bodycontainer .skills .border .skill-box .title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 23px;
+}
+#bodycontainer .skills .border .skill-box .skill-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 215, 0, 0.8);
+  border-radius: 6px;
+  margin-top: 5px;
+}
+#bodycontainer .skills .border .skill-box .skill-bar .skill-per {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #2600ff;
+  border-radius: 6px;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes progress {
+  0% {
+    width: 0px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#bodycontainer .skills .border .skill-box .skill-bar .skill-per .tooltip {
+  position: absolute;
+  top: -35px;
+  right: -17px;
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+  background: #2600ff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  opacity: 1;
+}
+#bodycontainer .skills .border .skill-box .skill-bar .skill-per .tooltip::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #2600ff;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: 1;
+}
+#bodycontainer .skills .border .skill-box .skill-bar .skill-per.css {
+  width: 80%;
+  animation-delay: 0.1s;
+}
+#bodycontainer .skills .border .skill-box .skill-bar .skill-per.javascript {
+  width: 50%;
+  animation-delay: 0.2s;
+}
+#bodycontainer .skills .border .skill-box .skill-bar .skill-per.bootstrap {
+  width: 60%;
+}
+#bodycontainer .skills .border .skill-box .skill-bar .skill-per.jQuery {
+  width: 50%;
+  animation-delay: 0.1s;
+}
+#bodycontainer .skills .border .skill-box .skill-bar .skill-per.scass {
+  width: 70%;
+  animation-delay: 0.2s;
+}
+#bodycontainer .gallery {
+  margin-top: 15%;
+}
+#bodycontainer .gallery h1 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0px 0px 50px 0px;
+  position: relative;
+}
+#bodycontainer .gallery h1::after {
+  content: "";
+  width: 90px;
+  height: 2px;
+  display: inline-block;
+  background: gold;
+  position: absolute;
+  left: 525px;
+  bottom: -5px;
+}
+#bodycontainer .gallery .gallery-box {
+  border: 2px solid #b79a09;
+  padding: 60px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#bodycontainer .gallery .gallery-box img {
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  height: 290px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+#bodycontainer .gallery .gallery-box .opacity {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 60px;
+  width: 236px;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  padding: 20px;
+  animation: mymove 1s;
+  display: none;
+}
+#bodycontainer .gallery .gallery-box .opacity h2 {
+  margin: 0px;
+  font-size: 20px;
+  line-height: 28px;
+}
+#bodycontainer .gallery .gallery-box .opacity p {
+  margin: 0px;
+  font-size: 20px;
+  line-height: 28px;
+}
+#bodycontainer .gallery .gallery-box .opacity a {
+  margin: 0px;
+  font-size: 15px;
+  line-height: 21px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 20px;
+  color: white;
+}
+#bodycontainer .gallery .gallery-box .opacity a i {
+  margin-left: 10px;
+}
+#bodycontainer .gallery .gallery-box .opacity a:hover {
+  color: gold;
+}
+
+#footercontainer {
+  margin: 15% -15px 0px -15px;
+}
+#footercontainer .contact h1 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0px 0px 60px 0px;
+  position: relative;
+}
+#footercontainer .contact h1::after {
+  content: "";
+  width: 160px;
+  height: 2px;
+  display: inline-block;
+  background: gold;
+  position: absolute;
+  left: 490px;
+  bottom: -5px;
+}
+#footercontainer .contact .details {
+  cursor: pointer;
+  padding: 50px 30px;
+  border: 2px solid #b79a09;
+  border-radius: 30px;
+}
+#footercontainer .contact .details .whitebox {
+  text-align: center;
+  padding: 30px 10px;
+  border-radius: 10px;
+  min-height: 217px;
+  margin: 0px 10px;
+}
+#footercontainer .contact .details .whitebox .boxicon {
+  display: inline-block;
+  text-decoration: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background: gold;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 15px 0px 0px 0px;
+  color: #080808;
+}
+#footercontainer .contact .details .whitebox .boxicon:hover {
+  color: #080808;
+}
+#footercontainer .contact .details .whitebox h2 {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 10px 0px 7px 0px;
+  text-transform: capitalize;
+}
+#footercontainer .contact .details .whitebox a {
+  display: block;
+  text-decoration: none;
+  margin: 0px 0px 5px 0px;
+  color: white;
+}
+#footercontainer .contact .details .whitebox a:hover {
+  color: gold;
+}
+#footercontainer .contact .details .whitebox:hover, #footercontainer .contact .details .whitebox.active {
+  box-shadow: 0px 0px 20px gold;
+}
+#footercontainer .contact .details .extra-padd {
+  padding: 40px 0px;
+}
+#footercontainer .contact .details .location-box {
+  padding: 40px 10px 0px 10px;
+}
+#footercontainer h2 {
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  margin: 40px 0px 20px 0px;
+}
+#footercontainer h2:hover {
+  color: gold;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #headercontainer .custom-navbar .navbar-header .navbar-toggle {
+    top: -30px;
+  }
+  #headercontainer .custom-navbar .nav {
+    border: 2px solid #b79a09;
+    width: 110%;
+    padding-left: 10px;
+    background: #3c22ff;
+  }
+  #bodycontainer .intro .mypic {
+    width: 270px;
+    height: 270px;
+    min-height: 270px;
+    margin: 0px 0px 0px 5px;
+  }
+  #bodycontainer .intro .header-text {
+    padding: 0px;
+    margin: 0px 0px 50px 20px;
+    min-height: 0px;
+  }
+  #bodycontainer .intro .header-text h1 {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 20px 0px 10px 10px;
+  }
+  #bodycontainer .intro .header-text .dynamic-txt {
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+  }
+  #bodycontainer .intro .header-text button, #bodycontainer .intro .header-text a {
+    padding: 10px 15px;
+  }
+  #bodycontainer .about .heading {
+    margin: 0px 0px 20px 0px;
+  }
+  #bodycontainer .about .heading a {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0px 5px;
+    text-align: center;
+  }
+  #bodycontainer .about .about-brdr {
+    padding: 0px 10px;
+    border-radius: 10px;
+  }
+  #bodycontainer .about .mypic2 {
+    min-height: 0px;
+  }
+  #bodycontainer .about .mypic2 img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0px;
+  }
+  #bodycontainer .about .biodata {
+    padding: 20px 0px;
+  }
+  #bodycontainer .about .biodata .education {
+    width: 100%;
+    border-radius: 15px;
+    margin: 0px 0px 30px 0px;
+  }
+  #bodycontainer .about .biodata .expreience {
+    padding: 33px 25px;
+    width: 100%;
+  }
+  #bodycontainer .skills {
+    margin-top: 25%;
+  }
+  #bodycontainer .skills h1 {
+    font-size: 25px;
+    line-height: 31px;
+    margin: 0px 0px 20px 0px;
+  }
+  #bodycontainer .skills h1::after {
+    left: 93px;
+    width: 105px;
+  }
+  #bodycontainer .skills .border {
+    padding: 0px 15px;
+    border-radius: 10px;
+  }
+  #bodycontainer .skills .border .skill-box {
+    margin: 40px 0px;
+  }
+  #bodycontainer .gallery {
+    margin-top: 25%;
+  }
+  #bodycontainer .gallery h1 {
+    margin: 0px 0px 20px 0px;
+    font-size: 25px;
+    line-height: 31px;
+  }
+  #bodycontainer .gallery h1::after {
+    left: 106px;
+    width: 80px;
+  }
+  #bodycontainer .gallery .gallery-box {
+    padding: 30px;
+  }
+  #bodycontainer .gallery .gallery-box .opacity {
+    width: 200px;
+    bottom: 30px;
+    height: 130px;
+    padding: 20px 0px;
+  }
+  #footercontainer .contact {
+    margin-top: 20%;
+  }
+  #footercontainer .contact h1 {
+    margin: 0px 0px 20px 0px;
+    font-size: 25px;
+    line-height: 31px;
+  }
+  #footercontainer .contact h1::after {
+    left: 80px;
+    width: 135px;
+  }
+  #footercontainer .contact .details {
+    border-radius: 10px;
+    padding: 30px 0px;
+  }
+  #footercontainer .contact .details .whitebox {
+    margin: 20px 10px;
+  }
+}/*# sourceMappingURL=stylesheet.css.map */

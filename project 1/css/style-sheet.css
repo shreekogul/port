@@ -1,0 +1,1864 @@
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Roboto-regular";
+}
+
+.clear {
+  clear: both;
+}
+
+.brdr {
+  border: 1px solid red;
+}
+
+.custome-btn {
+  display: none;
+}
+
+.to-top {
+  height: 40px;
+  width: 35px;
+  background: #61b91a;
+  color: white;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  line-height: 31px;
+  scroll-behavior: smooth;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+.to-top:hover, .to-top.active {
+  background-color: orangered;
+}
+
+.custome-modal-dialog {
+  width: 930px;
+}
+.custome-modal-dialog .modal-content {
+  margin-top: 90px;
+}
+.custome-modal-dialog .modal-content .modal-body {
+  padding: 0px;
+  position: relative;
+}
+.custome-modal-dialog .modal-content .modal-body .blink {
+  margin: 50px 0px 0px 0px;
+  border-top: 1px solid #ccc;
+  padding: 40px;
+}
+.custome-modal-dialog .modal-content .modal-body .blink img {
+  width: 103%;
+  height: 320px;
+}
+.custome-modal-dialog .modal-content .modal-body .blink .blink-text {
+  margin-left: 10px;
+}
+.custome-modal-dialog .modal-content .modal-body .blink .blink-text h1 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 47px 0px 13px 0px;
+}
+.custome-modal-dialog .modal-content .modal-body .blink .blink-text p {
+  font-size: 15px;
+  line-height: 21px;
+  margin: 0px 0px 20px 0px;
+}
+.custome-modal-dialog .modal-content .modal-body .blink .blink-text .join {
+  margin-bottom: 28px;
+}
+.custome-modal-dialog .modal-content .modal-body .blink .blink-text .join .input-1 {
+  width: 77%;
+  padding: 18px 0px 18px 20px;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.custome-modal-dialog .modal-content .modal-body .blink .blink-text .join .sign {
+  padding: 19px 10px 19px 10px;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: capitalize;
+  background: #61b91a;
+  color: white;
+  margin-left: -4px;
+  border: none;
+  outline: none;
+}
+.custome-modal-dialog .modal-content .modal-body .blink .blink-text .join .sign:hover, .custome-modal-dialog .modal-content .modal-body .blink .blink-text .join .sign.active {
+  background: orangered;
+}
+.custome-modal-dialog .modal-content .modal-body .blink .blink-text .checkb {
+  cursor: pointer;
+}
+.custome-modal-dialog .modal-content .modal-body .blink .blink-text .intp {
+  display: inline;
+  margin: 0px 0px 0px 7px;
+  font-size: 15px;
+  line-height: 25px;
+}
+.custome-modal-dialog .modal-content .modal-body .blink .blink-text a {
+  color: #9b8f8f;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 26px;
+  display: inline-block;
+  position: absolute;
+  top: -80px;
+  right: -10px;
+}
+
+.headercontainer {
+  margin: 0px -15px;
+}
+.headercontainer .top {
+  padding: 20px 50px 20px 50px;
+  background: #f4f9fd;
+}
+.headercontainer .top .left {
+  float: left;
+}
+.headercontainer .top .left a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 23px;
+  background: #61b91a;
+  color: white;
+  text-decoration: none;
+  padding: 1px 0px 0px 0px;
+  margin-right: 20px;
+}
+.headercontainer .top .left a:hover, .headercontainer .top .left a.active {
+  background-color: orangered;
+}
+.headercontainer .top .right {
+  float: right;
+}
+.headercontainer .top .right a {
+  font-size: 15px;
+  line-height: 21px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+}
+.headercontainer .top .right a:hover, .headercontainer .top .right a.active {
+  color: blue;
+}
+.headercontainer .top .right a:hover span, .headercontainer .top .right a.active span {
+  background-color: orangered;
+}
+.headercontainer .top .right a span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 23px;
+  background: #61b91a;
+  color: white;
+  padding: 1px 0px 0px 0px;
+  margin-right: 10px;
+}
+.headercontainer .top .right .dropdown {
+  padding: 6px 0px 2px 0px;
+  display: inline-block;
+  margin-left: -20px;
+}
+.headercontainer .top .right .dropdown .arrow {
+  margin-left: 30px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.headercontainer .top .right .dropdown .language {
+  background: #f4f9fd;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 20px;
+}
+.headercontainer .top .right .dropdown .language a {
+  background: none;
+}
+.headercontainer .top .right .dropdown:hover, .headercontainer .top .right .dropdown.active {
+  color: blue;
+}
+.headercontainer .bottom {
+  padding: 10px 25px;
+}
+.headercontainer .bottom .first {
+  float: left;
+}
+.headercontainer .bottom .first a {
+  display: inline-block;
+}
+.headercontainer .bottom .first .resbar {
+  display: none;
+}
+.headercontainer .bottom .second {
+  float: left;
+}
+.headercontainer .bottom .second .custom-navbar {
+  margin: 16px 0px 0px 55px;
+}
+.headercontainer .bottom .second .custom-navbar .navbar-nav > li > a {
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: capitalize;
+  padding: 15px 13px;
+  color: black;
+  font-weight: bold;
+  background: none;
+}
+.headercontainer .bottom .second .custom-navbar .navbar-nav > li > a:hover, .headercontainer .bottom .second .custom-navbar .navbar-nav > li > a.active {
+  color: #61b91a;
+}
+.headercontainer .bottom .second .custom-navbar .navicon {
+  font-size: 12px;
+  line-height: 18px;
+}
+.headercontainer .bottom .second .custom-navbar .navicon:hover, .headercontainer .bottom .second .custom-navbar .navicon.active {
+  color: #61b91a;
+}
+.headercontainer .bottom .third {
+  float: right;
+}
+.headercontainer .bottom .third a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+  margin: 0px 30px 0px 0px;
+  position: relative;
+  text-decoration: none;
+}
+.headercontainer .bottom .third a:hover, .headercontainer .bottom .third a.active {
+  color: #61b91a;
+}
+.headercontainer .bottom .third a span {
+  background: red;
+  padding: 0px 5px;
+  display: inline-block;
+  border-radius: 100%;
+  font-size: 13px;
+  line-height: 19px;
+  color: white;
+  position: absolute;
+  top: -11px;
+  right: -2px;
+}
+.headercontainer .bottom .third .thirdbtn {
+  padding: 15px 30px;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: capitalize;
+  background: #61b91a;
+  color: white;
+  outline: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin: 16px 0px 0px 0px;
+}
+.headercontainer .bottom .third .thirdbtn:hover, .headercontainer .bottom .third .thirdbtn.active {
+  background: orangered;
+  color: white;
+}
+.headercontainer .bottom .third input {
+  display: none;
+}
+
+.bodycontainer .banner {
+  padding: 0px 10px;
+}
+.bodycontainer .banner .col-sm-3 {
+  padding-right: 0px;
+}
+.bodycontainer .banner .col-sm-3 .categories {
+  background: white;
+  border: 1px solid #f3f0f0;
+  outline: none;
+  padding: 15px 26px;
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.bodycontainer .banner .col-sm-3 .categories .aricon {
+  margin: 0px 0px 0px 75px;
+}
+.bodycontainer .banner .col-sm-3 .allways {
+  width: 100%;
+  top: 95%;
+  display: block;
+  padding: 0px;
+  box-shadow: none;
+  border: none;
+}
+.bodycontainer .banner .col-sm-3 .allways li {
+  border: 1px solid #f3f0f0;
+}
+.bodycontainer .banner .col-sm-3 .allways li a {
+  padding: 9px 28px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.bodycontainer .banner .col-sm-3 .allways li a span {
+  margin: 0px 0px 0px 30px;
+  font-size: 17px;
+  line-height: 23px;
+}
+.bodycontainer .banner .col-sm-3 .allways li button {
+  border: none;
+  outline: none;
+  background: white;
+  padding: 9px 28px;
+  text-transform: capitalize;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+.bodycontainer .banner .col-sm-3 .allways li button .inner {
+  margin: 0px 0px 0px 30px;
+  font-size: 17px;
+  line-height: 23px;
+  display: inline-block;
+}
+.bodycontainer .banner .col-sm-3 .allways li button .outer {
+  display: none;
+  margin: 0px 0px 0px 30px;
+  font-size: 17px;
+  line-height: 23px;
+  display: none;
+}
+.bodycontainer .banner .col-sm-3 .allways li button:hover .inner, .bodycontainer .banner .col-sm-3 .allways li button.active .inner {
+  display: none;
+}
+.bodycontainer .banner .col-sm-3 .allways li button:hover .outer, .bodycontainer .banner .col-sm-3 .allways li button.active .outer {
+  display: inline-block;
+}
+.bodycontainer .banner .col-sm-3 .allways li .showing {
+  left: 220px;
+}
+.bodycontainer .banner .col-sm-3 .allways li:hover .showing {
+  display: block;
+}
+.bodycontainer .banner .col-sm-9 {
+  padding-left: 0px;
+}
+.bodycontainer .banner .col-sm-9 .custom-carousle .ione {
+  background: url("../images/slider-1.jpg") no-repeat 0px 0px/100%;
+  min-height: 460px;
+  padding: 110px 30px;
+}
+.bodycontainer .banner .col-sm-9 .custom-carousle .itwo {
+  background: url("../images/slider-2.jpg") no-repeat 0px 0px/100%;
+  min-height: 460px;
+  padding: 110px 30px;
+}
+.bodycontainer .banner .col-sm-9 .custom-carousle .ithree {
+  background: url("../images/slider-3.jpg") no-repeat 0px 0px/100%;
+  min-height: 460px;
+  padding: 110px 30px;
+}
+.bodycontainer .banner .col-sm-9 .custom-carousle .carousel-control.left, .bodycontainer .banner .col-sm-9 .custom-carousle .carousel-control.right {
+  display: none;
+}
+.bodycontainer .banner .col-sm-9 .custom-carousle .carousel-caption {
+  position: static;
+  padding: 0px;
+  text-align: left;
+}
+.bodycontainer .banner .col-sm-9 .custom-carousle .carousel-caption p {
+  font-size: 17px;
+  line-height: 23px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 0px;
+}
+.bodycontainer .banner .col-sm-9 .custom-carousle .carousel-caption h3 {
+  font-size: 30px;
+  line-height: 45px;
+  width: 340px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.bodycontainer .banner .col-sm-9 .custom-carousle .carousel-caption .thirdbtn {
+  padding: 15px 30px;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: capitalize;
+  background: #61b91a;
+  color: white;
+  outline: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0px 0px 0px;
+}
+.bodycontainer .banner .col-sm-9 .custom-carousle .carousel-caption .thirdbtn:hover, .bodycontainer .banner .col-sm-9 .custom-carousle .carousel-caption .thirdbtn.active {
+  background: orangered;
+}
+.bodycontainer .featured {
+  margin: 10px 0px 0px 0px;
+  padding: 0px 10px;
+}
+.bodycontainer .featured .center, .bodycontainer .featured .left {
+  text-align: center;
+}
+.bodycontainer .featured .center h1, .bodycontainer .featured .center h2, .bodycontainer .featured .left h1, .bodycontainer .featured .left h2 {
+  font-size: 40px;
+  line-height: 51px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.bodycontainer .featured .center p, .bodycontainer .featured .left p {
+  margin: 10px 0px 0px 0px;
+  padding: 0px 30%;
+  line-height: 25px;
+}
+.bodycontainer .featured .center h2, .bodycontainer .featured .left h2 {
+  text-align: left;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0px 0px 30px 0px;
+}
+.bodycontainer .featured .left {
+  text-align: left;
+}
+.bodycontainer .featured .title {
+  text-align: center;
+  margin: 30px 0px 40px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.bodycontainer .featured .title .part1 a {
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+  position: relative;
+  margin: 0px 5px;
+}
+.bodycontainer .featured .title .part1 a::after {
+  display: none;
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background: #61b91a;
+  position: absolute;
+  bottom: -8px;
+  left: 42%;
+}
+.bodycontainer .featured .title .part1 a:hover, .bodycontainer .featured .title .part1 a.active {
+  border-bottom: 2px solid #61b91a;
+  color: #61b91a;
+}
+.bodycontainer .featured .title .part1 a:hover::after, .bodycontainer .featured .title .part1 a.active::after {
+  display: block;
+}
+.bodycontainer .featured .title .visiable {
+  display: none;
+}
+.bodycontainer .featured .top-rated {
+  display: none;
+}
+.bodycontainer .featured .top-rated .products {
+  cursor: pointer;
+  min-height: 385px;
+  margin: 0px 0px 45px 0px;
+}
+.bodycontainer .featured .top-rated .products img {
+  width: 100%;
+  display: block;
+  position: relative;
+  min-height: 302px;
+}
+.bodycontainer .featured .top-rated .products .sale {
+  padding: 12px 6px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #b3af54;
+  color: white;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+}
+.bodycontainer .featured .top-rated .products h1 {
+  font-size: 18px;
+  line-height: 26px;
+  color: #61b91a;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.bodycontainer .featured .top-rated .products .price, .bodycontainer .featured .top-rated .products .discount {
+  font-size: 18px;
+  line-height: 26px;
+  color: #666666;
+  font-weight: bold;
+}
+.bodycontainer .featured .top-rated .products .discount {
+  text-decoration: line-through;
+  color: red;
+  margin: 0px 10px 0px 0px;
+}
+.bodycontainer .featured .top-rated .products .buy {
+  display: block;
+  margin: 20px 0px 0px 0px;
+  padding: 10px 30px;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background: #61b91a;
+}
+.bodycontainer .featured .top-rated .products .buy:hover, .bodycontainer .featured .top-rated .products .buy.active {
+  background: orangered;
+}
+.bodycontainer .featured .top-rated.active {
+  display: block;
+}
+.bodycontainer .featured .top-rated .reproduct {
+  margin: 0px 0px 15px 0px;
+}
+.bodycontainer .featured .viewall {
+  margin: 0% 0% 0% 40%;
+  padding: 15px 35px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+  background: #61b91a;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.bodycontainer .featured .viewall:hover, .bodycontainer .featured .viewall.active {
+  background: orangered;
+}
+.bodycontainer .featured .pesudo {
+  position: relative;
+  margin: 0px 0px 60px 0px;
+}
+.bodycontainer .featured .pesudo::before {
+  content: "";
+  width: 30px;
+  height: 5px;
+  background: orange;
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  left: 49%;
+  border-radius: 50px;
+}
+.bodycontainer .featured .pesudo::after {
+  content: "";
+  width: 30px;
+  height: 5px;
+  background: #61b91a;
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  left: 45%;
+  border-radius: 50px;
+}
+.bodycontainer .appliance {
+  margin: 40px 0px 0px 0px;
+}
+.bodycontainer .appliance .center {
+  text-align: center;
+}
+.bodycontainer .appliance .center h1 {
+  font-size: 40px;
+  line-height: 51px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.bodycontainer .appliance .center p {
+  margin: 10px 0px 0px 0px;
+  padding: 0px 30%;
+  line-height: 25px;
+}
+.bodycontainer .appliance .homeproducts {
+  padding: 0px 10px;
+  margin: 40px 0px 10% 0px;
+  position: relative;
+}
+.bodycontainer .appliance .homeproducts .products {
+  cursor: pointer;
+  min-height: 385px;
+  margin: 0px;
+}
+.bodycontainer .appliance .homeproducts .products .bgcolor {
+  background: black;
+}
+.bodycontainer .appliance .homeproducts .products .bgcolor img {
+  width: 100%;
+  display: block;
+  position: relative;
+  min-height: 308px;
+  opacity: 0.6;
+}
+.bodycontainer .appliance .homeproducts .products img {
+  width: 100%;
+  display: block;
+  position: relative;
+  min-height: 308px;
+}
+.bodycontainer .appliance .homeproducts .products .insidebox {
+  border: 1px solid white;
+  position: absolute;
+  top: 0px;
+  width: 81%;
+  padding: 30% 10%;
+  margin: 14px 17px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.bodycontainer .appliance .homeproducts .products .adding {
+  padding: 42% 10%;
+}
+.bodycontainer .appliance .homeproducts .products .trend {
+  padding: 36% 10%;
+}
+.bodycontainer .appliance .homeproducts .products .sale {
+  padding: 12px 6px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #b3af54;
+  color: white;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+}
+.bodycontainer .appliance .homeproducts .products h1 {
+  font-size: 18px;
+  line-height: 26px;
+  color: #61b91a;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.bodycontainer .appliance .homeproducts .products .price, .bodycontainer .appliance .homeproducts .products .discount {
+  font-size: 18px;
+  line-height: 26px;
+  color: #666666;
+  font-weight: bold;
+}
+.bodycontainer .appliance .homeproducts .products .discount {
+  text-decoration: line-through;
+  color: red;
+  margin: 0px 10px 0px 0px;
+}
+.bodycontainer .appliance .homeproducts::before {
+  content: "";
+  width: 30px;
+  height: 5px;
+  background: orange;
+  display: inline-block;
+  position: absolute;
+  bottom: -80px;
+  left: 49%;
+  border-radius: 50px;
+}
+.bodycontainer .appliance .homeproducts::after {
+  content: "";
+  width: 30px;
+  height: 5px;
+  background: #61b91a;
+  display: inline-block;
+  position: absolute;
+  bottom: -80px;
+  left: 45%;
+  border-radius: 50px;
+}
+.bodycontainer .appliance .homeproducts .extra::after {
+  content: "";
+  width: 30px;
+  height: 5px;
+  background: red;
+  display: inline-block;
+  position: absolute;
+  bottom: -80px;
+  left: 53%;
+  border-radius: 50px;
+}
+.bodycontainer .bestselling .center {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+.bodycontainer .bestselling .center h1 {
+  font-size: 40px;
+  line-height: 51px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.bodycontainer .bestselling .center p {
+  margin: 10px 0px 0px 0px;
+  padding: 0px 30%;
+  line-height: 25px;
+}
+.bodycontainer .bestselling .margins {
+  padding: 0px 25px;
+}
+.bodycontainer .bestselling .margins .back {
+  background: #f4f9fd;
+}
+.bodycontainer .bestselling .margins .week h1 {
+  font-size: 25px;
+  line-height: 31px;
+  text-align: center;
+  color: #61b91a;
+  text-transform: capitalize;
+  margin: 30px 0px 0px 0px;
+}
+.bodycontainer .bestselling .margins .week h2 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: bold;
+  margin: 15px 0px;
+}
+.bodycontainer .bestselling .margins .week .date {
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+}
+.bodycontainer .bestselling .margins .week .date span {
+  display: inline-block;
+  padding: 10px;
+  background: white;
+  width: 70px;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0px 5px;
+}
+.bodycontainer .bestselling .margins .week .date span strong {
+  font-size: 25px;
+  line-height: 31px;
+  font-weight: bold;
+}
+.bodycontainer .bestselling .margins .week a {
+  text-align: center;
+  margin: 30px 0px 30px 40%;
+  background: #61b91a;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.bodycontainer .bestselling .margins .week a i {
+  margin: 0px 10px 0px 0px;
+}
+.bodycontainer .bestselling .margins .week a:hover, .bodycontainer .bestselling .margins .week a.active {
+  background-color: orangered;
+}
+.bodycontainer .bestselling .margins .week img {
+  width: 100%;
+}
+.bodycontainer .bestselling .margins .products {
+  cursor: pointer;
+  min-height: 385px;
+  margin: 0px 0px 40px 0px;
+  padding: 0px 15px;
+}
+.bodycontainer .bestselling .margins .products .bgcolor {
+  background: black;
+}
+.bodycontainer .bestselling .margins .products .bgcolor img {
+  width: 100%;
+  display: block;
+  position: relative;
+  min-height: 302px;
+  opacity: 0.6;
+}
+.bodycontainer .bestselling .margins .products img {
+  width: 100%;
+  display: block;
+  position: relative;
+  min-height: 302px;
+}
+.bodycontainer .bestselling .margins .products .adding {
+  padding: 40% 10%;
+}
+.bodycontainer .bestselling .margins .products .sale {
+  padding: 12px 6px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #b3af54;
+  color: white;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+.bodycontainer .bestselling .margins .products h1 {
+  font-size: 18px;
+  line-height: 26px;
+  color: #61b91a;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.bodycontainer .bestselling .margins .products .price, .bodycontainer .bestselling .margins .products .discount {
+  font-size: 18px;
+  line-height: 26px;
+  color: #666666;
+  font-weight: bold;
+}
+.bodycontainer .bestselling .margins .products .discount {
+  text-decoration: line-through;
+  color: red;
+  margin: 0px 10px 0px 0px;
+}
+.bodycontainer .applmar {
+  margin: 15px 0px 0px 0px;
+}
+
+.footercontainer {
+  background: #f4f9fd;
+  padding: 50px 30px 35px 30px;
+  margin: 40px -15px 0px -15px;
+}
+.footercontainer .subscribe .floatl {
+  float: left;
+}
+.footercontainer .subscribe .floatl h1 {
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.footercontainer .subscribe .floatl p {
+  font-size: 17px;
+  line-height: 23px;
+}
+.footercontainer .subscribe .floatr {
+  float: right;
+  padding: 20px 0px 0px 0px;
+}
+.footercontainer .subscribe .floatr input[type=text] {
+  padding: 18px 20px;
+  width: 550px;
+  font-size: 15px;
+  line-height: 21px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+}
+.footercontainer .subscribe .floatr .membership {
+  padding: 18px 20px;
+  margin: 0px 0px 0px -3px;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background: #61b91a;
+  color: white;
+  outline: none;
+  border: none;
+}
+.footercontainer .subscribe .floatr .membership:hover, .footercontainer .subscribe .floatr .membership.active {
+  background: orangered;
+}
+.footercontainer .sections {
+  margin: 80px 0px 0px 0px;
+}
+.footercontainer .sections .section1 {
+  border-right: 1px solid #ccc;
+  min-height: 290px;
+  padding: 0px 20px 0px 0px;
+}
+.footercontainer .sections .section1 img {
+  width: 100%;
+}
+.footercontainer .sections .section1 p {
+  margin: 20px 0px;
+  line-height: 25px;
+}
+.footercontainer .sections .section1 .icon a {
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+  line-height: 21px;
+  background: #61b91a;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 100%;
+  padding: 4px 0px 0px 0px;
+  margin: 0px 0px 0px 5px;
+}
+.footercontainer .sections .section1 .icon a:hover, .footercontainer .sections .section1 .icon a.active {
+  background-color: orangered;
+}
+.footercontainer .sections .section2 {
+  border-right: 1px solid #ccc;
+  min-height: 290px;
+}
+.footercontainer .sections .section2 h1 {
+  margin: 10px 0px 30px 0px;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.footercontainer .sections .section2 a {
+  margin: 0px 0px 15px 0px;
+  display: block;
+  color: black;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.footercontainer .sections .section2 a:hover, .footercontainer .sections .section2 a.active {
+  color: blue;
+}
+.footercontainer .sections .section3 {
+  border-right: 1px solid #ccc;
+  min-height: 290px;
+  padding: 0px 10px 0px 0px;
+}
+.footercontainer .sections .section3 h1 {
+  margin: 10px 0px 20px 0px;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.footercontainer .sections .section3 a {
+  text-transform: capitalize;
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 10px 10px 10px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.footercontainer .sections .section3 a:hover, .footercontainer .sections .section3 a.active {
+  color: blue;
+}
+.footercontainer .sections .section3 a .side1 {
+  float: left;
+}
+.footercontainer .sections .section3 a .side2 {
+  float: right;
+  text-transform: uppercase;
+}
+.footercontainer .sections .section3 .nobrdr {
+  text-transform: capitalize;
+  border: none;
+}
+.footercontainer .sections .section4 {
+  min-height: 290px;
+}
+.footercontainer .sections .section4 h1 {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 10px 0px 30px 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.footercontainer .sections .section4 a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.footercontainer .sections .section4 a i {
+  text-align: center;
+  margin: 0px 20px 0px 0px;
+  font-size: 17px;
+  line-height: 23px;
+  color: #61b91a;
+  width: 11px;
+}
+.footercontainer .sections .section4 a span {
+  display: block;
+  margin: 10px 0px 10px 35px;
+  font-weight: 100;
+}
+.footercontainer .sections .section4 a:hover, .footercontainer .sections .section4 a.active {
+  color: blue;
+}
+.footercontainer .sections .section4 a:hover i, .footercontainer .sections .section4 a.active i {
+  color: blue;
+}
+
+.footersecond {
+  background: #222222;
+  padding: 40px 25px;
+  margin: 0px -15px 0px -15px;
+}
+.footersecond a {
+  float: left;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  margin: 20px 0px;
+}
+.footersecond a:hover, .footersecond a.active {
+  color: red;
+}
+.footersecond .paying {
+  float: right;
+}
+.footersecond .paying img {
+  width: 100%;
+}
+
+.bodycontainer .style {
+  background: #f4f9fd;
+  margin: 0px -15px;
+  padding: 130px 0px;
+  text-align: center;
+}
+.bodycontainer .style h1 {
+  font-size: 50px;
+  line-height: 56px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;
+}
+.bodycontainer .style a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  font-size: 15px;
+  line-height: 21px;
+  display: inline-block;
+}
+.bodycontainer .style a:hover, .bodycontainer .style a.active {
+  color: #61b91a;
+}
+.bodycontainer .style span {
+  margin: 0px 10px;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.bodycontainer .details {
+  margin: 40px 0px;
+}
+.bodycontainer .details .whitebox {
+  text-align: center;
+  padding: 30px 0px;
+  border-radius: 5px;
+  min-height: 213px;
+}
+.bodycontainer .details .whitebox .boxicon {
+  display: block;
+  color: black;
+  text-decoration: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background: white;
+  margin: 0% 0% 3% 43%;
+  box-shadow: 0px 0px 20px #e1e1ff;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 14px 0px 0px 0px;
+  color: #61b91a;
+}
+.bodycontainer .details .whitebox h1 {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 5px 0px 7px 0px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.bodycontainer .details .whitebox a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  margin: 0px 0px 5px 0px;
+}
+.bodycontainer .details .whitebox a:hover, .bodycontainer .details .whitebox a.active {
+  color: blue;
+}
+.bodycontainer .details .whitebox:hover, .bodycontainer .details .whitebox.active {
+  box-shadow: 0px 0px 20px #e1e1ff;
+}
+.bodycontainer .details .whitebox:hover .boxicon, .bodycontainer .details .whitebox.active .boxicon {
+  color: blue;
+}
+.bodycontainer .feedback {
+  margin: 0px 25px;
+  padding: 40px;
+}
+.bodycontainer .feedback .feedtext {
+  text-align: center;
+}
+.bodycontainer .feedback .feedtext h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  margin: 0px 0px 15px 0px;
+}
+.bodycontainer .feedback .feedtext p {
+  padding: 0px 29%;
+  margin: 0px 0px 40px 0px;
+}
+.bodycontainer .feedback .inpt input {
+  display: block;
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 15px;
+  line-height: 21px;
+  margin: 0px 0px 40px 0px;
+  border: 1px solid #e1e1ff;
+  text-transform: capitalize;
+  outline: none;
+}
+.bodycontainer .feedback .inpt input:hover, .bodycontainer .feedback .inpt input.active {
+  box-shadow: 0px 0px 10px #e1e1ff;
+}
+.bodycontainer .feedback .message textarea {
+  border: 1px solid #e1e1ff;
+  padding: 15px 30px;
+  width: 100%;
+  height: 240px;
+  font-size: 15px;
+  line-height: 21px;
+  margin: 0px 0px 40px 0px;
+  text-transform: capitalize;
+  outline: none;
+}
+.bodycontainer .feedback .message textarea:hover, .bodycontainer .feedback .message textarea.active {
+  box-shadow: 0px 0px 10px #e1e1ff;
+}
+.bodycontainer .feedback .inpbtn {
+  margin: 0px 0px 40px 50%;
+  padding: 15px 15px;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  color: white;
+  background: #61b91a;
+}
+.bodycontainer .feedback .inpbtn:hover, .bodycontainer .feedback .inpbtn.active {
+  background: orangered;
+}
+.bodycontainer .feedback .map {
+  position: relative;
+  width: 100%;
+  padding: 0% 0% 50% 0%;
+}
+.bodycontainer .feedback .map iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 1px sold red;
+}
+.bodycontainer .feedback .viewmap {
+  color: white;
+  background: #61b91a;
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 17px;
+  line-height: 23px;
+  text-transform: capitalize;
+  text-decoration: none;
+  margin: 20px 0px 0px 0px;
+}
+.bodycontainer .feedback .viewmap:hover, .bodycontainer .feedback .viewmap.active {
+  background: orangered;
+}
+.bodycontainer .feedback:hover, .bodycontainer .feedback.active {
+  box-shadow: 0px 0px 20px #e1e1ff;
+}
+
+.bodycontainer .productdetail {
+  margin: 40px 10px;
+}
+.bodycontainer .productdetail .productimg img {
+  width: 100%;
+  display: block;
+}
+.bodycontainer .productdetail .producttxt h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 5px 0px 20px 0px;
+}
+.bodycontainer .productdetail .producttxt a {
+  color: gold;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px 20px 0px;
+}
+.bodycontainer .productdetail .producttxt .review {
+  color: #61b91a;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  margin: 0px 0px 0px 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.bodycontainer .productdetail .producttxt .price {
+  color: #61b91a;
+  font-size: 20px;
+  margin: 0px 0px 20px 0px;
+  cursor: pointer;
+}
+.bodycontainer .productdetail .producttxt .para {
+  margin: 30px 0px 30px 0px;
+  line-height: 25px;
+}
+.bodycontainer .productdetail .producttxt .quantity {
+  width: 150px;
+  float: left;
+  margin: 0px 0px 20px 0px;
+}
+.bodycontainer .productdetail .producttxt .quantity button {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+  color: #ccc;
+  margin: 0px -4px;
+  outline: none;
+  border: none;
+  min-height: 50px;
+}
+.bodycontainer .productdetail .producttxt .quantity .number {
+  padding: 18px 20px 13px 20px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  width: 70px;
+  outline: none;
+  border: none;
+  background-color: #f8f8f8;
+}
+.bodycontainer .productdetail .producttxt .twobtn {
+  float: left;
+  margin: 0px 0px 20px;
+}
+.bodycontainer .productdetail .producttxt .twobtn .purchase {
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #61b91a;
+  color: white;
+  margin: 0px 0px 0px 10px;
+}
+.bodycontainer .productdetail .producttxt .twobtn .purchase:hover, .bodycontainer .productdetail .producttxt .twobtn .purchase.active {
+  background: orangered;
+}
+.bodycontainer .productdetail .producttxt .categories {
+  margin: 20px 0px 20px 0px;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+.bodycontainer .productdetail .producttxt .categories a {
+  font-size: 16px;
+  line-height: 22px;
+  color: #61b91a;
+}
+.bodycontainer .productdetail .rated {
+  margin: 20px 0px 40px 0px;
+  text-align: center;
+}
+.bodycontainer .productdetail .rated a {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 15px 40px;
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  margin: 0px 10px;
+}
+.bodycontainer .productdetail .rated a:hover, .bodycontainer .productdetail .rated a.active {
+  background: #61b91a;
+  color: white;
+}
+.bodycontainer .productdetail .mainaccordion {
+  margin: 10px;
+  padding: 25px;
+}
+.bodycontainer .productdetail .mainaccordion:hover, .bodycontainer .productdetail .mainaccordion .active {
+  box-shadow: 0px 0px 20px #e1e1ff;
+}
+.bodycontainer .productdetail .mainaccordion .accordion {
+  display: none;
+}
+.bodycontainer .productdetail .mainaccordion .accordion a {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  margin: 0px 0px 20px 0px;
+}
+.bodycontainer .productdetail .mainaccordion .accordion p {
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0px 0px 20px 0px;
+}
+.bodycontainer .productdetail .mainaccordion .accordion ul {
+  margin: 0px 0px 0px -20px;
+}
+.bodycontainer .productdetail .mainaccordion .accordion ul li {
+  margin: 10px 0px;
+}
+.bodycontainer .productdetail .mainaccordion .accordion.active {
+  display: block;
+  box-shadow: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .custome-modal-dialog {
+    width: auto;
+  }
+  .custome-modal-dialog .modal-content {
+    margin-top: 40px;
+  }
+  .custome-modal-dialog .modal-content .modal-body .blink {
+    padding: 20px 10px;
+  }
+  .custome-modal-dialog .modal-content .modal-body .blink img {
+    width: 100%;
+    height: 100%;
+  }
+  .custome-modal-dialog .modal-content .modal-body .blink .blink-text {
+    margin: 0px;
+  }
+  .custome-modal-dialog .modal-content .modal-body .blink .blink-text h1 {
+    font-size: 25px;
+    line-height: 31px;
+    margin: 15px 0px 10px 0px;
+  }
+  .custome-modal-dialog .modal-content .modal-body .blink .blink-text .join .input-1 {
+    width: 69%;
+    padding: 18px 0px 18px 15px;
+  }
+  .custome-modal-dialog .modal-content .modal-body .blink .blink-text a {
+    top: -290px;
+    right: 20px;
+  }
+  .headercontainer .top {
+    display: none;
+  }
+  .headercontainer .bottom {
+    padding: 10px 15px;
+  }
+  .headercontainer .bottom .first {
+    float: none;
+    text-align: center;
+    position: relative;
+  }
+  .headercontainer .bottom .first a {
+    display: block;
+  }
+  .headercontainer .bottom .first a img {
+    width: 70%;
+    margin: 0px 0px 0px -80px;
+  }
+  .headercontainer .bottom .first .resbar {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    font-size: 20px;
+    line-height: 26px;
+    color: black;
+    border: 1px solid black;
+    padding: 2px 8px;
+    background: rgba(237, 235, 235, 0.8);
+  }
+  .headercontainer .bottom .first .resbar.active {
+    background: #61b91a;
+    color: white;
+  }
+  .headercontainer .bottom .second {
+    float: none;
+  }
+  .headercontainer .bottom .second .custom-navbar {
+    margin: 10px -15px;
+    display: none;
+  }
+  .headercontainer .bottom .second .custom-navbar .navbar-nav {
+    background: #f1eeee;
+    margin: 0px;
+  }
+  .headercontainer .bottom .second .custom-navbar .navicon {
+    margin: 0px 0px 0px 5px;
+  }
+  .headercontainer .bottom .second .custom-navbar.active {
+    display: block;
+  }
+  .headercontainer .bottom .third {
+    float: none;
+    margin: 20px 0px 50px 0px;
+  }
+  .headercontainer .bottom .third a {
+    font-size: 25px;
+    line-height: 31px;
+    margin: 0px 22% 0px 8%;
+  }
+  .headercontainer .bottom .third a .fa-search {
+    position: absolute;
+    bottom: -9px;
+  }
+  .headercontainer .bottom .third a .fa-shopping-bag {
+    display: none;
+  }
+  .headercontainer .bottom .third a span {
+    display: none;
+  }
+  .headercontainer .bottom .third .thirdbtn {
+    padding: 10px 20px;
+    margin: 0px;
+    position: relative;
+  }
+  .headercontainer .bottom .third input {
+    padding: 5px 20px;
+    display: block;
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    left: 0px;
+    outline: none;
+    border: 1px solid #ccc;
+    width: 90%;
+    margin: 0px 5%;
+    font-size: 15px;
+    line-height: 21px;
+    display: none;
+  }
+  .headercontainer .bottom .third input.active {
+    display: block;
+  }
+  .bodycontainer .banner .firstcol {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .bodycontainer .banner .firstcol .categories {
+    padding: 15px 24px;
+  }
+  .bodycontainer .banner .custom-row {
+    margin: 0px -10px;
+  }
+  .bodycontainer .banner .secondcol {
+    width: 100%;
+    top: 430px;
+    padding-right: 0px;
+  }
+  .bodycontainer .banner .secondcol .custom-carousle .carousel-inner .ithree {
+    min-height: 0px;
+    padding: 20px 15px;
+  }
+  .bodycontainer .banner .secondcol .custom-carousle .carousel-inner .ione {
+    min-height: 0px;
+    padding: 20px 15px;
+  }
+  .bodycontainer .banner .secondcol .custom-carousle .carousel-inner .itwo {
+    min-height: 0px;
+    padding: 20px 15px;
+  }
+  .bodycontainer .banner .secondcol .custom-carousle .carousel-inner .carousel-caption p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .bodycontainer .banner .secondcol .custom-carousle .carousel-inner .carousel-caption h3 {
+    font-size: 20px;
+    line-height: 26px;
+    width: 230px;
+    margin: 10px 0px;
+  }
+  .bodycontainer .banner .secondcol .custom-carousle .carousel-inner .carousel-caption .thirdbtn {
+    padding: 10px 15px;
+    margin: 5px 0px 0px 0px;
+  }
+  .bodycontainer .featured {
+    margin: 152% 0px 0px 0px;
+    padding: 0px;
+  }
+  .bodycontainer .featured .center h1 {
+    font-size: 25px;
+    line-height: 31px;
+  }
+  .bodycontainer .featured .center p {
+    padding: 0px;
+  }
+  .bodycontainer .featured .title {
+    text-align: left;
+    margin: 10px 0px 20px 0px;
+    text-align: center;
+    border: none;
+  }
+  .bodycontainer .featured .title .part1 a {
+    font-size: 15px;
+    line-height: 21px;
+    padding: 10px 0px 5px 0px;
+    margin: 10px 9px;
+    width: 125px;
+    border-bottom: 1px solid #ccc;
+  }
+  .bodycontainer .featured .title .part1 a:hover, .bodycontainer .featured .title .part1 a.hover {
+    border-bottom: 1px solid #61b91a;
+  }
+  .bodycontainer .featured .title .part1 a:hover::after, .bodycontainer .featured .title .part1 a.hover::after {
+    left: 45%;
+  }
+  .bodycontainer .featured .viewall {
+    margin: 0px 0px 0px 20%;
+    padding: 12px 20px;
+  }
+  .bodycontainer .appliance .center h1 {
+    font-size: 23px;
+    line-height: 39px;
+  }
+  .bodycontainer .appliance .center p {
+    padding: 0px;
+  }
+  .bodycontainer .appliance .homeproducts {
+    margin: 0px 0px 10% 0px;
+  }
+  .bodycontainer .appliance .homeproducts::after {
+    bottom: 0px;
+    left: 33%;
+  }
+  .bodycontainer .appliance .homeproducts::before {
+    bottom: 0px;
+    left: 45%;
+  }
+  .bodycontainer .appliance .homeproducts .products {
+    min-height: 305px;
+    margin: 40px 0px;
+  }
+  .bodycontainer .appliance .homeproducts .products .insidebox {
+    padding: 32% 10%;
+    margin: 15px;
+  }
+  .bodycontainer .appliance .homeproducts .products h1 {
+    margin: 15px 0px 0px 0px;
+  }
+  .bodycontainer .appliance .homeproducts .products .adding {
+    padding: 45% 10%;
+  }
+  .bodycontainer .appliance .homeproducts .extra::after {
+    bottom: 0px;
+    left: 58%;
+  }
+  .bodycontainer .bestselling {
+    margin: 40px 0px 0px 0px;
+  }
+  .bodycontainer .bestselling .center {
+    margin: 0px;
+  }
+  .bodycontainer .bestselling .center h1 {
+    font-size: 25px;
+    line-height: 31px;
+  }
+  .bodycontainer .bestselling .center p {
+    padding: 0px;
+  }
+  .bodycontainer .bestselling .margins {
+    padding: 0px 10px;
+    margin: 10px -15px 0px -15px;
+  }
+  .bodycontainer .bestselling .margins .row {
+    margin: 0px;
+  }
+  .bodycontainer .bestselling .margins .back {
+    background: none;
+  }
+  .bodycontainer .bestselling .margins .back .week {
+    background: #f4f9fd;
+    margin: 0px -15px 20px -15px;
+    padding: 30px 15px;
+  }
+  .bodycontainer .bestselling .margins .back .week h1 {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0px;
+  }
+  .bodycontainer .bestselling .margins .back .week h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .bodycontainer .bestselling .margins .back .week .date span {
+    width: 64px;
+    margin: 0px 3px;
+  }
+  .bodycontainer .bestselling .margins .back .week .date span strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .bodycontainer .bestselling .margins .back .week a {
+    margin: 30px 0px 30px 25%;
+  }
+  .bodycontainer .bestselling .margins .paddingminus {
+    padding: 0px;
+  }
+  .bodycontainer .bestselling .margins .products {
+    min-height: 0px;
+    margin: 0px 0px 25px 0px;
+  }
+  .bodycontainer .bestselling .margins .products h1 {
+    margin: 10px 0px 5px 0px;
+  }
+  .bodycontainer .bestselling .margins .products .sale {
+    right: 15px;
+  }
+  .bodycontainer .morden .applmar, .bodycontainer .rated .applmar {
+    margin: 0px;
+  }
+  .bodycontainer .morden .applmar .homeproducts .trend, .bodycontainer .rated .applmar .homeproducts .trend {
+    padding: 38% 10%;
+  }
+  .bodycontainer .adjust-featured {
+    margin: 15% 0px 0px 0px;
+  }
+  .bodycontainer .adjust-featured .title .part1 a {
+    font-size: 15px;
+    line-height: 21px;
+    padding: 10px 0px;
+    margin: 5px 10px;
+  }
+  .bodycontainer .adjust-featured .top-rated .products {
+    margin: 0px 0px 25px 0px;
+  }
+  .bodycontainer .adjust-featured .pesudo::before {
+    left: 38%;
+  }
+  .bodycontainer .adjust-featured .pesudo::after {
+    left: 52%;
+  }
+  .footercontainer {
+    padding: 20px 15px 35px 15px;
+    margin: 40px -15px 0px -15px;
+  }
+  .footercontainer .subscribe .floatl h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .footercontainer .subscribe .floatl p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .footercontainer .subscribe .floatr {
+    float: none;
+  }
+  .footercontainer .subscribe .floatr input[type=text] {
+    width: 69%;
+  }
+  .footercontainer .subscribe .floatr .membership {
+    padding: 19px 9px;
+  }
+  .footercontainer .sections {
+    margin: 30px 0px 0px 0px;
+  }
+  .footercontainer .sections .section1, .footercontainer .sections .section2, .footercontainer .sections .section3, .footercontainer .sections .section4 {
+    border: none;
+  }
+  .footercontainer .sections .section1 a, .footercontainer .sections .section2 a, .footercontainer .sections .section3 a, .footercontainer .sections .section4 a {
+    font-size: 13px;
+    display: block;
+  }
+  .footercontainer .sections .section1 .icon a {
+    padding: 6px 0px 0px 0px;
+  }
+  .footersecond a {
+    line-height: 21px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bodycontainer .style {
+    padding: 50px 15px;
+  }
+  .bodycontainer .style h1 {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0px 0px 10px 0px;
+  }
+  .bodycontainer .addstyle h1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .bodycontainer .addstyle a {
+    line-height: 25px;
+  }
+  .bodycontainer .details {
+    margin: 40px 0px 10px 0px;
+  }
+  .bodycontainer .details .whitebox {
+    padding: 30px 20px;
+    margin: 0px 0px 20px 0px;
+  }
+  .bodycontainer .details .whitebox .boxicon {
+    margin: 0% 0% 3% 39%;
+  }
+  .bodycontainer .feedback {
+    padding: 20px 10px;
+    margin: 0px;
+  }
+  .bodycontainer .feedback .feedtext h1 {
+    font-size: 23px;
+    line-height: 29px;
+  }
+  .bodycontainer .feedback .feedtext p {
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+  }
+  .bodycontainer .feedback .inpt input {
+    padding: 15px 15px;
+    margin: 0px 0px 15px 0px;
+  }
+  .bodycontainer .feedback .message textarea {
+    padding: 15px 15px;
+    height: 150px;
+    margin: 0px 0px 20px 0px;
+  }
+  .bodycontainer .feedback .inpbtn {
+    margin: 0px 0px 25px 38%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bodycontainer .productdetail {
+    margin: 10px 0px;
+  }
+  .bodycontainer .productdetail .producttxt {
+    margin: 20px 0px 0px 0px;
+  }
+  .bodycontainer .productdetail .producttxt h1 {
+    margin: 5px 0px 10px 0px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .bodycontainer .productdetail .producttxt a {
+    margin: 0px 0px 15px 0px;
+  }
+  .bodycontainer .productdetail .producttxt .price {
+    margin: 0px 0px 15px 0px;
+  }
+  .bodycontainer .productdetail .producttxt .para {
+    margin: 0px 0px 15px 0px;
+  }
+  .bodycontainer .productdetail .producttxt .twobtn {
+    float: none;
+  }
+  .bodycontainer .productdetail .producttxt .twobtn .purchase {
+    float: left;
+    display: block;
+    padding: 15px 25px;
+    margin: 5px 12px 0px 0px;
+  }
+  .bodycontainer .productdetail .producttxt .categories a {
+    margin: 0px;
+    line-height: 25px;
+  }
+  .bodycontainer .productdetail .rated {
+    margin: 10px -15px 20px -15px;
+    text-align: left;
+    padding: 0px 10px;
+  }
+  .bodycontainer .productdetail .rated a {
+    display: block;
+    margin: 0px 0px 10px 0px;
+  }
+  .bodycontainer .productdetail .mainaccordion {
+    margin: 0px -15px;
+    padding: 10px;
+  }
+  .bodycontainer .productdetail .mainaccordion .accordion a {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .bodycontainer .productdetail .mainaccordion .accordion p {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .bodycontainer .adjust-featured {
+    margin: 0px;
+  }
+  .bodycontainer .adjust-featured .left h1 {
+    font-size: 25px;
+    line-height: 31px;
+    margin: 0px 0px 15px 0px;
+  }
+  .bodycontainer .adjust-featured .top-rated .products {
+    min-height: 365px;
+  }
+  .bodycontainer .adjust-featured .top-rated .products h1 {
+    margin: 10px 0px 0px 0px;
+  }
+}/*# sourceMappingURL=style-sheet.css.map */

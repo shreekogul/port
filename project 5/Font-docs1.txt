@@ -1,0 +1,141 @@
+Font family 
+```````````````````
+
+Roboto regular
+
+ Rather App
+Home
+Services
+Projects
+Team
+News
+Contacts
+
+experience the team
+We are the team with qualified software developers, aimed at creating unique and poweful tools for your business and everyday life
+
+get in touch
+
+Infinite Instition
+We are the team with qualified software developers, aimed at creating unique and poweful tools for your business and everyday life
+
+get in touch
+
+Lorem ipsum
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.has been the industry's standard dummy text ever since the 1500s
+
+get in touch
+Previous Next
+
+what we offer
+view all services
+
+corporate solution
+Need specific software for your company? We are ready to develope it!
+
+
+call center solution
+Our expexts provide custom products of any complexity for call center
+
+
+cloud development
+We can also offer you reliable cloud development solution.
+
+let's develope your next great app
+do you need a unique software for your company? we know how to help you.
+
+get in touch learn more
+latest project
+In our portfolio, you can browse the latest projects developed for our clients for different coporate purpose. Our qualified team of interface designers and software developers is always ready to create something unique for you.
+
+
+years of experience
+RatherApp is a team of highly experienced app designers and developers creating unique software for you
+
+get in touch
+2k
+app developed
+
+40
+consultants
+
+12
+awards won
+
+160
+employers
+
+meet the team
+
+
+rayan wilson
+directot of production
+
+
+jill peterson
+ui designer
+
+
+sam robinson
+senior developer
+
+
+mary lee
+software developer
+
+   
+pricing
+basic
+$500.00
+starting at
+basic
+concept development
+ui design
+configuration management
+software quality assurance
+app integration
+get started
+popular
+optimal
+$800.00
+starting at
+optimal
+concept development
+ui design
+configuration management
+software quality assurance
+app integration
+get started
+ultimate
+$1200.00
+starting at
+ultimate
+concept development
+ui design
+configuration management
+software quality assurance
+app integration
+get started
+ 07/04/
+Benefits Of Async/Await
+Asynchronous functions are a good and bad thing in JavaScript. The good side is that Asynchronous functions are non-blocking and...
+
+ 07/17
+Key Considerations Of IPaaS
+Digital transformation requires cloud appropriate adoption, legacy IT systems modernization, and Agile-based methodoligies for faster....
+
+ 07/22
+Hibernate Query Language
+In this tutorial, we will discuss the Hibernate Query Language. HQL is an ogject-oriented query Language.Hibernate Query....
+
+get in touch
+If you have any questions, just fill the form we will answer you shortly
+
+Your Name
+your email
+Phone Number
+Message
+send message
+ui design window/mac os app android//ios app cloud solution customer support
+@ 2021 rather app
+all rights served

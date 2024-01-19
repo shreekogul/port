@@ -1,0 +1,953 @@
+$navactive:#f6fa07;
+$navtext:white;
+$black:black;
+$btnborder:#e9e9e9;
+$highlight:#3b7ce6;
+$highlight2:#0b5be0;
+$discount-hov:#d84c21;
+$liteblue:#00b0fa;
+$paracolor:#9da9b6;
+$paracolor2:#a1abb5;
+$boxshadow:#edebeb;
+$background:#f0f5fe;
+$background2:#f4f7fa;
+$footpara:#7a7a7a;
+$footerbg:#0c0d0d;
+$foothover:#5f34c2;
+$foot2bg:#060606;
+$res-feedback:#795548;
+.brdr{
+    border: 1px solid red;
+}
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('../fonts/Roboto-Bold.eot');
+    src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype'),
+        url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: 'Roboto-regular';
+    font-size: 14px;
+    line-height: 22px;
+}
+.headercontainer{
+    background: url('../images/banners.jpg') no-repeat 0px 0px / 108%;
+    padding:10px 0px 209px 0px;
+    margin-bottom: 40px;
+    .custom-navbar{
+        background: none;
+        border: none;
+        .navbar-header{
+            .navbar-brand{
+                background: url('../images/white-logo.png') no-repeat 0px -8px / 100%;
+                width: 150px;
+            }
+        }
+        .navbar-nav>.active>a{
+            background: none;
+            color:$navactive;
+        }
+        .navbar-nav>li>a{
+            color: $navtext;
+            font-size: 18px;
+            line-height: 24px;
+            text-transform: capitalize;
+            &:hover{
+                color:$navactive;
+            }
+        }
+    }
+    .headtext{
+        margin-top:13%;
+        padding:0% 42% 0% 10%; 
+        h1{
+            font-size: 73px;
+            line-height: 79px;
+            font-weight: bolder;
+        }
+        p{
+            padding-left: 3px;
+            margin: 30px 0px;
+        }
+        a{
+            width:180px;
+            height:57px;
+            margin-right: 20px;
+            &:hover{
+                box-shadow: 0px 0px 20px $black;
+            }
+        }
+        .btnback1{
+            border:1px solid $btnborder;
+            background: url('../images/google_play_b.png') no-repeat 0px 0px / 100%;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        .btnback2{
+            border:1px solid $btnborder;
+            background: url('../images/app_btn.png') no-repeat 0px 0px / 100%;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+    }
+}
+.bodycontainer{
+    .circle{
+        background: url('../images/about.jpg') no-repeat -55px 0px / 130%;
+        width: 380px;
+        height: 380px;
+        border-radius: 100%;
+        margin:40px 20px 20px 120px;
+    }
+    .circletext{
+        h1{
+            font-size: 14px;
+            line-height: 20px;
+            color:$highlight;
+            text-transform: uppercase;
+            font-weight: bolder;
+            margin-top:30px;
+        }
+        h2{
+            font-size: 45px;
+            line-height: 51px;
+            font-weight: bold;
+            margin:0px 120px 0px 0px;
+        }
+        p{
+            color:$paracolor;
+            margin: 20px 0px;
+        }
+        .custom-form{
+            .checkbox label, .form-inline .radio label .active{
+                padding:10px;
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+        a{
+            padding: 13px 25px;
+            margin: 12px 10px;
+        }
+    }
+    .company{
+        margin: 70px 0px;
+        text-align: center;
+        h1{
+            text-transform: capitalize;
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: bolder;
+            padding: 0px 31%;
+            margin-bottom: 40px;
+        }
+        h2{
+            font-size: 70px;
+            line-height: 76px;
+            margin:0px 0px 10px 0px;
+            position: relative;
+            padding-left:70px;
+            &::before{
+                content: '';
+                width: 2px;
+                height: 30px;
+                background-color: $highlight2;
+                display: inline-block;
+                position: absolute;
+                top: 35px;
+                left: 129px;
+            }
+            span{
+                color: $highlight2;
+            }
+            img{
+                position: absolute;
+                top: 10px;
+                left: 30px;
+                width: 90px;
+                height: 90px;
+            }
+        }
+        p{
+            color: $highlight2;
+            text-transform: capitalize;
+            font-weight: bold;
+            padding-left:55px; 
+        }
+    }
+    .discountcontainer{
+        background:url('../images/COLOR.jpg') no-repeat 0px 0px / 100%;
+        .custom-btn{
+            padding: 12% 0% 10% 0%;
+            background: url('../images/11.png') no-repeat 115% 35px / 54%;
+            h1{
+                font-size: 79px;
+                line-height: 87px;
+                color: $navtext;
+                font-weight: bolder;
+                margin:10% 48% 0% 0%;
+            }
+            p{
+                margin:20px 51% 40px 0px;
+                font-size: 15px;
+                line-height: 25px;
+                color: $navtext;
+            }
+            .btn-primary{
+                font-size: 17px;
+                line-height: 23px;
+                color: $black;
+                background: $navtext;
+                padding:15px 25px;
+                text-transform: capitalize;
+                &:hover{
+                    color:$navtext;
+                    background: $discount-hov;
+                }
+            }
+        }
+    }
+    .whychoose{
+        margin: 50px 15px;
+        h1{
+            font-size: 18px;
+            line-height: 24px;
+            color: $highlight;
+            text-transform:capitalize;
+            font-weight: bold;
+            text-align: center;
+        }
+        h2{
+            font-size: 35px;
+            line-height: 50px;
+            padding: 0px 27%;
+            margin: 0px 0px 40px 0px;
+            text-transform:capitalize;
+            text-align: center;
+        }
+        .fourbox{
+            padding: 4% 3% 4% 27%;
+            margin-bottom: 20px;
+            &:hover{
+                box-shadow: 0px 2px 20px $boxshadow;
+            }
+            h3{
+                font-size: 18px;
+                line-height: 24px;
+                position: relative;
+                font-weight: bold;
+                img{
+                    position: absolute;
+                    left: -110px;
+                    top: -3px;
+                    width: 20%;
+                    display: block;
+                }
+            }
+            p{
+                color: $paracolor2;
+            }
+        }
+        .lastline{
+            text-align: center;
+            font-size: 16px;
+            line-height: 22px;
+            color:$paracolor2;
+            margin: 40px 0px;
+            a{
+                font-weight:bold;
+            }
+        }
+    }
+    .bannercontainer{
+        background: url('../images/COLOR_02.jpg') no-repeat 0px 0px / 100%;
+        padding:10% 0% 0% 0%;
+        .banner{
+            background:$navtext;
+            padding: 40px;
+            border-radius: 5px;
+            &:hover{
+                box-shadow: 0px 0px 20px $paracolor2;
+            }
+            img{
+                border-radius: 5px;
+                width: 100%;
+            }
+        }
+        .bannertext{
+            padding:10px 0px 0px 40px;
+            h1{
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 50px;
+                strong{
+                    color:$highlight2;
+                }
+            }
+            p{
+                font-size: 15px;
+                line-height: 25px;
+                color: $paracolor2;
+                margin:40px 0px;
+            }
+            h2{
+                font-size: 15px;
+                line-height: 25px;
+                text-decoration: underline;
+                padding: 30px 0px;
+            }
+            a{
+                padding:15px 25px;
+                text-transform: capitalize;
+                margin: 15px 0px;
+                font-size: 16px;
+                line-height: 25px;
+            }
+            .text2{
+                padding:35px 20px;
+                background: $background;
+                p{
+                    color: $black;
+                    font-size: 16px;
+                    line-height: 25px;
+                    padding-left: 70px;
+                    position: relative;
+                    margin: 0px;
+                }
+                a{
+                    position: absolute;
+                    top: 0px;
+                    left: 8px;
+                    color: $liteblue;
+                    font-size: 45px;
+                    line-height: 51px;
+                    margin: 0px;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+    .brands{
+        margin: 7% 0% 10% 0%;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    .shop, .headphone{
+        margin-bottom: 50px;
+        .shopcircle{
+            background: url('../images/yellow.PNG') no-repeat -25px -2px / 110%;
+            width: 500px;
+            height: 500px;
+            margin: 20px 0px 0px 40px;
+            border-radius: 100%;
+        }
+        .shoptext{
+            h1{
+                margin: 110px 0px 40px 0px;
+                font-size: 53px;
+                line-height: 60px;
+                font-weight: 800;
+            }
+            p{
+                margin-bottom: 35px;
+                color: $footpara;
+            }
+            a{
+                padding: 15px 30px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        .headie{
+            background:url('../images/headie.PNG') no-repeat 20px 40px / 90%;
+            padding-bottom: 498px;
+        }
+        .padding{
+            padding:0px 0px 50px 110px;
+        }
+    }
+    .feedback{
+        background: url('../images/contact-1.jpg') no-repeat -400px 0px / 130%;
+        padding-bottom: 160px;
+        .contact{
+            margin: 110px 60px 0px 0px;
+            padding: 40px 40px 70px 40px;
+            background: $navtext;
+            .custom-form{
+                input, textarea{
+                    background: $background;
+                    padding: 28px 10px;
+                }
+                .btn-primary{
+                    padding: 15px 50px;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .reviewcontainer{
+        background: $background2;
+        .reviewhead{
+            text-align: center;
+            h1{
+                font-size: 18px;
+                line-height: 24px;
+                color: $highlight;
+                font-weight: bold;
+                margin-top: 10%;
+            }
+            h2{
+                font-size: 28px;
+                line-height: 34px;
+                font-weight: bold;
+                padding:0px 19%;
+            }
+        }
+        .custom-Carousel{
+            .carousel-control.right, .carousel-control.left{
+                background:none;
+            }
+            .carousel-indicators{
+                li{
+                    border: 1px solid $black;
+                }
+                .active{
+                    background: $black;
+                }
+            }
+            .carousel-control, .glyphicon-chevron-right, .glyphicon-chevron-left{
+                color: $navtext;
+                background: $highlight2;
+                padding: 11px 0px;
+                position: relative;
+                top: -55px;
+                left: 248px;
+                width: 50px;
+                height: 50px;
+                margin: 0px 7px;
+            }
+            .glyphicon-chevron-left:before, .glyphicon-chevron-right:before{
+                display:none;
+                color: $highlight;
+            }
+            .reviewbody{
+                margin: 40px 0px;
+                padding-bottom: 15%;
+                .customerreview{
+                    padding:20px 20px 20px 110px;
+                    background: $navtext;
+                    border-radius: 10px;
+                    h1{
+                        font-size: 28px;
+                        line-height: 34px;
+                        font-weight: bold;
+                        position: relative;
+                        margin: 0px;
+                        img{
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 100%;
+                            position: absolute;
+                            top: 4px;
+                            left:-85px;
+                        }
+                    }
+                    p{
+                        color: $paracolor2;
+                        padding-top: 5px;
+                    }
+                }
+                .para{
+                    background: $navtext;
+                    p{
+                        padding:20px 20px 0px 35px;
+                    }
+                    a{
+                        font-size: 26px;
+                        line-height: 31px;
+                        color: $highlight;
+                    }
+                    .star{
+                        text-align: right;
+                        padding:5px 25px 20px 0px;
+                        a{
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: $highlight;
+                        }
+                        p{
+                            padding: 0px;
+                            color: $paracolor2;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
+.footercontainer{
+    padding:5% 0%;
+    background: $footerbg;
+    .companyinfo{
+        padding: 30px 0px;
+        h1{
+            font-size: 24px;
+            line-height: 31px;
+            font-weight: bold;
+            color: $navtext;
+            position: relative;
+            margin: 0px 0px 40px 0px;
+            &::before{
+                content: '';
+                width: 5px;
+                height: 5px;
+                background-color: $highlight2;
+                position: absolute;
+                top: 40px;
+                left: 0px;
+                border-radius: 100px;
+            }
+            &::after{
+                content: '';
+                width: 45px;
+                height: 4px;
+                background-color: $highlight2;
+                position: absolute;
+                top: 40px;
+                left: 11px;
+                border-radius: 100px;
+            }
+        }
+        p{
+            color: $footpara;
+            font-size: 17px;
+            line-height: 23px;
+            margin: 0px 0px 40px 0px;
+        }
+        .custom-btn{
+            .btn{
+                padding: 7px 15px 7px 40px;
+            }
+            p{
+                color: $navtext;
+                margin: 0px;
+                font-size: 12px;
+                line-height: 18px;
+            }
+            h2{
+                font-size: 18px;
+                line-height: 24px;
+                margin: 0px;
+                position: relative;
+                span{
+                    font-size: 32px;
+                    line-height: 38px;
+                    position: absolute;
+                    top: -18px;
+                    left: -30px;
+                }
+            }
+        }
+        ul{
+            margin-left: -30px;
+            li{
+                margin:18px 0px;
+                a{
+                    color: $footpara;
+                    font-size: 19px;
+                    line-height: 25px;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    &:hover{
+                        color: $highlight2;
+                    }
+                }
+            }
+        }
+        .recent{
+            h4{
+                font-size: 17px;
+                line-height: 23px;
+                color: $highlight2;
+                position: relative;
+                padding-left: 80px;
+                margin: 0px 0px 10px 0px;
+                &:hover{
+                    color:$foothover;
+                }
+                img{
+                    width: 70px;
+                    height: 70px;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+            p{
+                font-size: 17px;
+                line-height: 23px;
+                color: $footpara;
+                padding-left: 80px;
+                margin: 0px;
+            }
+        }
+    }
+    .padding{
+        padding: 10px 0px; 
+    }
+    .paddingbt{
+        padding:30px 0px 10px 0px;
+    }
+}
+.footsecond{
+    background: $foot2bg;
+    padding:30px 0px;
+    .custom-navbar{
+        background: none;
+        border: none;
+        .navbar-brand{
+            color: $navtext;
+            font-size: 14px;
+            line-height: 21px;
+            &:hover{
+                color: $highlight2;
+            }
+        }
+        .navbar-nav>.active>a, .navbar-nav>li>a{
+            color: $navtext;
+            background: none;
+            font-size: 14px;
+            line-height: 21px;
+            &:hover{
+                color: $highlight2;
+            }
+        }
+    }
+}
+@media(min-width:320px) and (max-width:480px)
+{
+    .headercontainer{
+        padding: 10px 0px 0px 0px;
+        .headtext {
+            margin-top: 7%;
+            padding: 0% 0% 0% 0%;
+            h1{
+                font-size: 23px;
+                line-height: 29px;
+            }
+            p{
+                margin: 20px 0px;
+            }
+            a{
+                width: 135px;
+                height: 43px;
+                margin-right: 8px;
+                &:hover{
+                    box-shadow: 0px 1px 12px black;
+                }
+            }
+        }
+        .custom-navbar{
+            .navbar-header{
+                .navbar-brand{
+                    background: url(../images/white-logo.png) no-repeat 0px -13px/93%;
+                    width: 180px;
+                    margin: 22px 0px 0px 26px;
+                }
+            }
+            .navbar-toggle{
+                margin: 63% 0px 0px 0px;
+                background: $black;
+            }
+            .navbar-nav > .active > a {
+                color: $foothover;
+            }
+            .navbar-nav > li > a{
+                color: $black;
+                &:hover{
+                    color: $foothover;
+                }
+            }
+        }
+    }
+    .bodycontainer{
+        .circle{
+            width: 300px;
+            height:300px;
+            margin: 10px 20px 20px 0px;
+        }
+        .circletext{
+            h1{
+                margin: 20px 0px 10px 0px;
+                text-align: center;
+            }
+            h2{
+                font-size: 23px;
+                line-height: 29px;
+                margin: 0px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 22px;
+                margin: 10px 0px;
+            }
+            a{
+                margin: 12px 0px 10px 0px;
+            }
+            .custom-form{
+                .checkbox{
+                    padding: 5px;
+                }
+                .checkbox label{
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin: 0px 7px;
+                    padding: 0px 0px 0px 20px;
+                }   
+            }
+        }
+        .company{
+            margin-top: 10px;
+            h1{
+                font-size: 22px;
+                line-height: 28px;
+                padding: 0px;
+                margin-bottom: 30px;
+            }
+            h2{
+                padding-left: 90px;
+                &::before{
+                    top: 30px;
+                    left: 98px;
+                }
+                img{
+                    top: 2px;
+                    left: 0px;
+                }
+            }
+        }
+        .discountcontainer{
+            .custom-btn{
+                
+                background: url(../images/11.png) no-repeat 115% 60px/54%;
+                h1{
+                    font-size: 23px;
+                    line-height: 29px;
+                    margin: 35% 37% 0% 0%;
+                }
+                p{
+                    margin: 60px 0px 20px 0px;
+                    color: $black;
+                }
+                .btn-primary{
+                    background: $highlight2;
+                    color: $navtext;
+                    font-weight: 100;
+                    &:hover{
+                        background: $foothover;
+                    }
+                }
+            }
+        }
+        .whychoose{
+            margin: 10px 0px;
+            h1{
+                font-size: 17px;
+            }
+            h2{
+                font-size: 27px;
+                line-height: 33px;
+                padding: 0px;
+                margin: 15px 0px 20px 0px;
+            }
+            .fourbox{
+                margin-bottom: 0px;
+                h3{
+                    img{
+                        left: -71px;
+                        top: 17px;
+                        width: 30%;
+                    }
+                }
+            }
+            .lastline{
+                margin: 20px 0px 40px 0px;
+            }
+        }
+       .bannercontainer{
+            .banner{
+                padding: 10px;
+            }
+            .bannertext{
+                padding: 0px;
+                h1{
+                    font-size: 22px;
+                    line-height: 30px;
+                    text-align: center;
+                }
+                p{
+                    margin: 20px 0px;
+                }
+                h2{
+                    padding: 0px;
+                }
+                a{
+                    padding: 12px 10px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                .text2{
+                    padding: 15px 0px;
+                    p{
+                        font-size: 14px;
+                        line-height: 22px;
+                        padding: 0px 20px 0px 41px;
+                    }
+                    a{
+                        top: -3px;
+                        left: 10px;
+                        font-size: 25px;
+                        line-height: 31px;
+                    }
+                    h2{
+                        padding: 0px;
+                    }
+                }
+            }
+       }
+       .shop{
+            .shopcircle{
+                background: url(../images/yellow.PNG) no-repeat -13px -2px/110%;
+                width: 300px;
+                height: 300px;
+                margin: 20px 0px 0px 0px;
+            }
+            .shoptext{
+                h1{
+                    margin: 30px 0px 20px 0px;
+                    font-size: 23px;
+                    line-height: 30px;
+                }
+                p{
+                    margin-bottom: 25px;
+                }
+                a{
+                    padding: 10px 15px;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+       }
+        .headphone{
+            margin-bottom: 0px;
+            .shoptext{
+                padding: 0px 0px 20px 0px;
+                h1{
+                    font-size: 21px;
+                    line-height: 27px;
+                    margin:10px 0px 20px 0px;
+                }
+                a{
+                    padding: 10px 15px;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+            .headie{
+                background: url(../images/headie.PNG) no-repeat 10px 0px/100%;
+                padding-bottom: 300px;
+            }
+        }
+        .feedback{
+            background: url(../images/contact-1.jpg) no-repeat 0px 0px/100%;
+            padding: 0px;
+            .contact{
+                margin: 60% 0px 0px 0px;
+                padding: 40px 40px 70px 40px;
+                background: $res-feedback;
+                .custom-form{
+                    .btn-primary{
+                        padding: 10px 15px;
+                        font-size: 15px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+        .reviewcontainer{
+            .reviewhead{
+               h1{
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-top: 15%;
+               }
+               h2{
+                    font-size: 19px;
+                    line-height: 25px;
+                    font-weight: bold;
+                    padding: 0px;
+               }
+            }
+            .custom-Carousel{
+                .carousel-control{
+                    padding: 16px 0px;
+                    top: -30px;
+                    left: 41px;
+                    margin: 0px 3px;
+                }
+                .reviewbody{
+                    .customerreview{
+                        margin-top: 30px;
+                    }
+                }
+                .glyphicon-chevron-left, .glyphicon-chevron-right{
+                    padding: 16px 0px;
+                    top: -27px;
+                    left: 37px;
+                    margin: 0px 5px;
+                }
+            }
+        } 
+    }
+    .footercontainer{
+        .companyinfo{
+            ul{
+                margin-left: -20px;
+            }
+
+        }
+        .paddingbt{
+            padding: 0px 0px 10px 0px;
+        }
+    }
+    .footsecond{
+        .custom-navbar{
+            .navbar-brand{
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
