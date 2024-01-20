@@ -27,6 +27,15 @@
     font-style: normal;
     font-display: swap;
 }
+$bgcolor:#080808;
+$blue: #2600ff;
+$brdrgold: #b79a09;
+$navbarbg:rgba(8, 8, 8, 0.6);
+$skillbar:rgba(255, 215, 0, 0.8);
+$opacitybg:rgba(0, 0, 0, 0.5);
+$black:black;
+$white:white;
+$gold:gold;
 html{
     scroll-behavior: smooth;
     scroll-padding: 16rem;
@@ -35,15 +44,15 @@ body{
     font-family: 'Roboto-regular';
     font-size: 14px;
     line-height: 20px;
-    background: #080808;
-    color: white;
+    background: $bgcolor;
+    color: $white;
 }
 .to-top{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background: gold;
-    color: #080808;
+    background: $gold;
+    color: $bgcolor;
     position: fixed;
     right: 30px;
     bottom: 30px;
@@ -58,7 +67,7 @@ body{
     }
 }
 .brdr{
-    border: 1px solid white;
+    border: 1px solid $white;
 }
 .clear{
     clear: both;
@@ -69,7 +78,7 @@ body{
     z-index: 1;
     margin: 0px -15px;
     .custom-navbar{
-        background: rgba(8, 8, 8, 0.6);
+        background: $navbarbg;
         .navbar-header{
             .logo{
                 float: left;
@@ -81,10 +90,10 @@ body{
                 }
             }
             .navbar-toggle{
-                border: 1px solid gold;
-                background-color: gold;
+                border: 1px solid $gold;
+                background-color: $gold;
                 span{
-                    background-color: black;
+                    background-color: $black;
                 }
             }
         }
@@ -93,7 +102,7 @@ body{
                 a{
                     font-size: 17px;
                     line-height: 24px;
-                    color: white;
+                    color: $white;
                     margin: 5px 20px 0px 0px;
                     text-align: center;
                     position: relative;
@@ -104,7 +113,7 @@ body{
                         content: "";
                         width: 0%;
                         height: 2px;
-                        background: gold;
+                        background: $gold;
                         display: inline-block;
                         position: absolute;
                         left: 0px;
@@ -112,7 +121,7 @@ body{
                         transition: 0.5s;
                     }
                     &:hover, &.active{
-                        color: gold; 
+                        color: $gold; 
                         &::after{
                             width: 100%;
                         }
@@ -146,7 +155,7 @@ body{
                 font-size: 35px;
                 line-height: 41px;
                 span{
-                    color: gold;
+                    color: $gold;
                 }
             }
             .dynamic-txt{
@@ -158,7 +167,7 @@ body{
             .dynamic-txt li{
                 list-style: none;
                 font-size: 26px;
-                color: gold;
+                color: $gold;
                 position: relative;
                 top: 0px;
                 animation: slide 7s steps(2) infinite;
@@ -169,8 +178,8 @@ body{
                         position: absolute;
                         height: 100%;
                         width: 100%;
-                        background-color: #080808;
-                        border-left: 2px solid gold;
+                        background-color: $bgcolor;
+                        border-left: 2px solid $gold;
                         left: 0px;
                         animation: typing 3.5s steps(14) infinite;
                     }
@@ -195,14 +204,14 @@ body{
                 text-decoration: none;
                 text-align: center;
                 display: inline-block;
-                border: 2px solid #b79a09;
+                border: 2px solid $brdrgold;
                 background: none;
                 outline: none;
-                color: gold;
+                color: $gold;
                 margin: 0px 10px 0px 0px;
                 &:hover, &.active{
-                    background-color: gold;
-                    color: black;
+                    background-color: $gold;
+                    color: $black;
                     border: none;
                 }
                 i{
@@ -218,7 +227,7 @@ body{
             margin: 0px 0px 50px 0px;
             a{
                 text-decoration: none;
-                color: white;
+                color: $white;
                 font-size: 25px;
                 line-height: 31px;
                 margin-right: 40px;
@@ -227,7 +236,7 @@ body{
                     content: '';
                     width: 0%;
                     height: 2px;
-                    background-color: gold;
+                    background-color: $gold;
                     display: inline-block;
                     position: absolute;
                     left: 0px;
@@ -242,7 +251,7 @@ body{
             }
         }
         .about-brdr{
-            border: 2px solid #b79a09;
+            border: 2px solid $brdrgold;
             border-radius: 30px;
             padding: 40px 30px;
         }
@@ -261,7 +270,7 @@ body{
                 font-size: 15px;
                 line-height: 23px;
                 span{
-                    color: gold;
+                    color: $gold;
                 }
             }
             &.active{
@@ -278,7 +287,7 @@ body{
                 width: 45%;
                 border-radius: 15px;
                 margin: 0px 45px 0px 15px;
-                border: 2px solid #b79a09;
+                border: 2px solid $brdrgold;
                 float: left;
                 .educa-p{
                     margin: 13px 0px;
@@ -286,17 +295,17 @@ body{
                     line-height: 22px;
                 }
                 &:hover{
-                    box-shadow: 0px 0px 20px gold;
+                    box-shadow: 0px 0px 20px $gold;
                 }
             }
             .expreience{
                 padding: 33px 0px;
                 width: 45%;
                 border-radius: 15px;
-                border: 2px solid #b79a09;
+                border: 2px solid $brdrgold;
                 float: left;
                 &:hover{
-                    box-shadow: 0px 0px 20px gold;
+                    box-shadow: 0px 0px 20px $gold;
                 }
                 h3{
                     font-size: 30px;
@@ -305,7 +314,7 @@ body{
                 }
                 span{
                     display: block;
-                    color: gold;
+                    color: $gold;
                     font-size: 18px;
                     line-height: 26px;
                 }
@@ -334,14 +343,14 @@ body{
                 width: 120px;
                 height: 2px;
                 display: inline-block;
-                background: gold;
+                background: $gold;
                 position: absolute;
                 left: 510px;
                 bottom: -5px;
             }
         }
         .border{
-            border: 2px solid #b79a09;
+            border: 2px solid $brdrgold;
             padding: 40px 30px;
             border-radius: 30px;
             .skill-box{
@@ -359,7 +368,7 @@ body{
                 .skill-bar{
                     width: 100%;
                     height: 8px;
-                    background: rgba(255, 215, 0, 0.8);
+                    background: $skillbar;
                     border-radius: 6px;
                     margin-top: 5px;
                     .skill-per{
@@ -367,7 +376,7 @@ body{
                         display: block;
                         width: 100%;
                         height: 100%;
-                        background: #2600ff;
+                        background: $blue;
                         border-radius: 6px;
                         animation: progress 0.4s ease-in-out forwards;
                         opacity: 0;
@@ -385,10 +394,10 @@ body{
                             top: -35px;
                             right: -17px;
                             font-weight: bold;
-                            color: white;
+                            color: $white;
                             font-size: 12px;
                             line-height: 18px;
-                            background: #2600ff;
+                            background: $blue;
                             padding: 2px 6px;
                             border-radius: 3px;
                             opacity: 1;
@@ -396,7 +405,7 @@ body{
                                 content: "";
                                 width: 8px;
                                 height: 8px;
-                                background: #2600ff;
+                                background: $blue;
                                 display: inline-block;
                                 position: absolute;
                                 left: 50%;
@@ -443,14 +452,14 @@ body{
                 width: 90px;
                 height: 2px;
                 display: inline-block;
-                background: gold;
+                background: $gold;
                 position: absolute;
                 left: 525px;
                 bottom: -5px;
             }
         }
         .gallery-box{
-            border: 2px solid #b79a09;
+            border: 2px solid $brdrgold;
             padding:60px;
             border-radius: 10px;
             margin-bottom: 20px;
@@ -465,7 +474,7 @@ body{
             }
             .opacity{
                 position: absolute;
-                background: rgba(0, 0, 0, 0.5);
+                background: $opacitybg;
                 bottom: 60px;
                 width: 236px;
                 border-radius: 0px 0px 10px 10px;
@@ -490,12 +499,12 @@ body{
                     display: inline-block;
                     text-decoration: none;
                     padding: 8px 20px;
-                    color: white;
+                    color: $white;
                     i{
                         margin-left: 10px;
                     }
                     &:hover{
-                        color: gold;
+                        color: $gold;
                     }
                 }
             }
@@ -516,7 +525,7 @@ body{
                 width: 160px;
                 height: 2px;
                 display: inline-block;
-                background: gold;
+                background: $gold;
                 position: absolute;
                 left: 490px;
                 bottom: -5px;
@@ -525,7 +534,7 @@ body{
         .details{
             cursor: pointer;
             padding: 50px 30px;
-            border: 2px solid #b79a09;
+            border: 2px solid $brdrgold;
             border-radius: 30px;
             .whitebox{
                 text-align: center;
@@ -539,13 +548,13 @@ body{
                     width: 55px;
                     height: 55px;
                     border-radius: 100%;
-                    background: gold;
+                    background: $gold;
                     font-size: 22px;
                     line-height: 28px;
                     padding: 15px 0px 0px 0px;
-                    color: #080808;
+                    color: $bgcolor;
                     &:hover{
-                        color: #080808;
+                        color: $bgcolor;
                     }
                 }
                 h2{
@@ -558,13 +567,13 @@ body{
                     display: block;
                     text-decoration: none;
                     margin: 0px 0px 5px 0px;
-                    color: white;
+                    color: $white;
                     &:hover{
-                        color: gold;
+                        color: $gold;
                     }
                 }
                 &:hover, &.active{
-                    box-shadow: 0px 0px 20px gold;
+                    box-shadow: 0px 0px 20px $gold;
                 }
             }
             .extra-padd{
@@ -581,7 +590,7 @@ body{
         text-align: center;
         margin: 40px 0px 20px 0px;
         &:hover{
-            color: gold;
+            color: $gold;
         }
     }
 }
@@ -593,7 +602,7 @@ body{
         top: -30px;
     }
     #headercontainer .custom-navbar .nav{
-        border: 2px solid #b79a09;
+        border: 2px solid $brdrgold;
         width: 110%;
         padding-left: 10px;
     }
