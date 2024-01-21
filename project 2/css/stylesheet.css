@@ -2049,9 +2049,23 @@ body {
   }
   .custome-modal-dialog .modal-content .modal-body .load-text .join {
     margin-bottom: 15px;
+    position: relative;
+    padding: 30px 0px;
   }
   .custome-modal-dialog .modal-content .modal-body .load-text .join .input-1 {
-    width: 171px;
+    width: 275px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    padding: 0px 0px 0px 20px;
+  }
+  .custome-modal-dialog .modal-content .modal-body .load-text .join .sign {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: 2px;
   }
   .headercontainer {
     margin: 0px -15px;

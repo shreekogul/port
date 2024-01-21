@@ -2178,8 +2178,22 @@ body{
                     }
                     .join{
                         margin-bottom: 15px;
+                        position: relative;
+                        padding: 30px 0px;
                         .input-1{
-                            width: 171px;
+                            width: 275px;
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            bottom: 0px;
+                            padding: 0px 0px 0px 20px;
+                        }
+                        .sign{
+                            position: absolute;
+                            right: 0px;
+                            top: 0px;
+                            bottom: 0px;
+                            margin: 2px;
                         }
                     }
                 }
