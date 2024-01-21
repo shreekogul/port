@@ -1410,7 +1410,7 @@ body {
     padding: 18px 0px 18px 15px;
   }
   .custome-modal-dialog .modal-content .modal-body .blink .blink-text a {
-    top: -290px;
+    top: -350px;
     right: 20px;
   }
   .headercontainer .top {
@@ -1813,14 +1813,17 @@ body {
   .bodycontainer .productdetail .producttxt .para {
     margin: 0px 0px 15px 0px;
   }
+  .bodycontainer .productdetail .producttxt .quantity {
+    margin: 0px 10px 0px 0px;
+  }
   .bodycontainer .productdetail .producttxt .twobtn {
     float: none;
   }
   .bodycontainer .productdetail .producttxt .twobtn .purchase {
     float: left;
     display: block;
-    padding: 15px 25px;
-    margin: 5px 12px 0px 0px;
+    padding: 15px;
+    margin: 0px 10px 0px 0px;
   }
   .bodycontainer .productdetail .producttxt .categories a {
     margin: 0px;
@@ -1860,5 +1863,11 @@ body {
   }
   .bodycontainer .adjust-featured .top-rated .products h1 {
     margin: 10px 0px 0px 0px;
+  }
+  .bodycontainer .adjust-featured .top-rated .products .sale {
+    padding: 17px 0px 0px 0px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style-sheet.css.map */

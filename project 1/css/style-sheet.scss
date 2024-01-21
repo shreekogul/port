@@ -1464,7 +1464,7 @@ body{
                             }
                         }
                         a{
-                            top: -290px;
+                            top: -350px;
                             right: 20px;
                         }
                     }
@@ -1924,13 +1924,16 @@ body{
                 .para{
                     margin: 0px 0px 15px 0px;
                 }
+                .quantity{
+                    margin: 0px 10px 0px 0px;
+                }
                 .twobtn{
                     float: none;
                     .purchase{
                         float: left;
                         display: block;
-                        padding: 15px 25px;
-                        margin: 5px 12px 0px 0px;
+                        padding: 15px;
+                        margin: 0px 10px 0px 0px;
                     }
                 }
                 .categories a{
@@ -1976,6 +1979,12 @@ body{
                     min-height: 365px;
                     h1{
                         margin: 10px 0px 0px 0px;
+                    }
+                    .sale{
+                        padding: 17px 0px 0px 0px;
+                        width: 60px;
+                        height: 60px;
+                        text-align: center;
                     }
                 }
             }
