@@ -246,6 +246,8 @@ body {
 }
 .bodycontainer .whychoose .lastline a {
   font-weight: bold;
+  display: inline-block;
+  margin: 0px 0px 0px 5px;
 }
 .bodycontainer .bannercontainer {
   background: url("../images/COLOR_02.jpg") no-repeat 0px 0px/100%;
@@ -612,6 +614,7 @@ body {
   .headercontainer .headtext {
     margin-top: 7%;
     padding: 0% 0% 0% 0%;
+    text-align: center;
   }
   .headercontainer .headtext h1 {
     font-size: 23px;
@@ -649,7 +652,10 @@ body {
   .bodycontainer .circle {
     width: 300px;
     height: 300px;
-    margin: 10px 20px 20px 0px;
+    margin: 0px auto;
+  }
+  .bodycontainer .circletext {
+    text-align: center;
   }
   .bodycontainer .circletext h1 {
     margin: 20px 0px 10px 0px;
@@ -678,7 +684,7 @@ body {
     padding: 0px 0px 0px 20px;
   }
   .bodycontainer .company {
-    margin-top: 10px;
+    margin: 10px 0px 10px 50px;
   }
   .bodycontainer .company h1 {
     font-size: 22px;
@@ -706,7 +712,7 @@ body {
     margin: 35% 37% 0% 0%;
   }
   .bodycontainer .discountcontainer .custom-btn p {
-    margin: 60px 0px 20px 0px;
+    margin: 90px 0px 20px 0px;
     color: black;
   }
   .bodycontainer .discountcontainer .custom-btn .btn-primary {
@@ -733,12 +739,15 @@ body {
     margin-bottom: 0px;
   }
   .bodycontainer .whychoose .fourbox h3 img {
-    left: -71px;
-    top: 17px;
+    left: -91px;
+    top: 0px;
     width: 30%;
   }
   .bodycontainer .whychoose .lastline {
     margin: 20px 0px 40px 0px;
+  }
+  .bodycontainer .whychoose .lastline a {
+    margin: 10px 0px 0px 0px;
   }
   .bodycontainer .bannercontainer .banner {
     padding: 10px;
@@ -753,6 +762,7 @@ body {
   }
   .bodycontainer .bannercontainer .bannertext p {
     margin: 20px 0px;
+    text-align: center;
   }
   .bodycontainer .bannercontainer .bannertext h2 {
     padding: 0px;
@@ -779,11 +789,16 @@ body {
   .bodycontainer .bannercontainer .bannertext .text2 h2 {
     padding: 0px;
   }
+  .bodycontainer .brands img {
+    width: 70%;
+    display: block;
+    margin: 10px 60px;
+  }
   .bodycontainer .shop .shopcircle {
     background: url(../images/yellow.PNG) no-repeat -13px -2px/110%;
     width: 300px;
     height: 300px;
-    margin: 20px 0px 0px 0px;
+    margin: 20px auto;
   }
   .bodycontainer .shop .shoptext h1 {
     margin: 30px 0px 20px 0px;
@@ -799,7 +814,7 @@ body {
     line-height: 22px;
   }
   .bodycontainer .headphone {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
   .bodycontainer .headphone .shoptext {
     padding: 0px 0px 20px 0px;
@@ -815,7 +830,7 @@ body {
     line-height: 22px;
   }
   .bodycontainer .headphone .headie {
-    background: url(../images/headie.PNG) no-repeat 10px 0px/100%;
+    background: url(../images/headie.PNG) no-repeat 30px -10px/90%;
     padding-bottom: 300px;
   }
   .bodycontainer .feedback {

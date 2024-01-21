@@ -1040,9 +1040,12 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: white;
-  padding: 3px 8px;
+  padding: 3px 7px;
   display: inline-block;
   margin-right: 7px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
 }
 .footercontainer .footbox3 .icon:hover, .footercontainer .footbox3 .icon.active {
   background: green;
@@ -2015,7 +2018,7 @@ body {
     padding: 0px 0px 6px 0px;
   }
   .custome-modal-dialog {
-    width: 300px;
+    width: auto;
     margin-top: 20px;
   }
   .custome-modal-dialog .modal-content {
@@ -2359,10 +2362,11 @@ body {
     width: 100%;
   }
   .bodycontainer .topselling .toplist .pics {
-    width: 108px;
-    padding: 28px 0px 0px 0px;
+    width: 50%;
+    padding: 0px;
     margin-bottom: 10px;
     overflow: hidden;
+    min-height: 197px;
   }
   .bodycontainer .topselling .toplist .pics img {
     width: 100%;
@@ -2383,7 +2387,9 @@ body {
     width: 62px;
   }
   .bodycontainer .topselling .toplist .pictext {
-    width: 182px;
+    width: 50%;
+    min-height: 197px;
+    padding: 10px;
   }
   .bodycontainer .topselling .toplist .pictext p {
     margin: 0px;
@@ -2561,7 +2567,7 @@ body {
   }
   .bodycontainer .banner2 {
     background: url("../images/newsbg.webp") no-repeat 0px 0px/100%;
-    padding: 80px 0px 0px 5px;
+    padding: 85px 0px 0px 5px;
     margin: 0px;
   }
   .bodycontainer .banner2 h1 {
@@ -2587,7 +2593,7 @@ body {
   .footercontainer {
     margin: 20px -15px 0px -15px;
     background: url(../images/footer-bg.webp) no-repeat 0px 0px/100%;
-    padding: 100px 0px 0px 5px;
+    padding: 30% 0px 0px 5px;
     color: black;
   }
   .footercontainer .footbox1 {
@@ -2720,7 +2726,7 @@ body {
     padding: 100px 0px 0px 0px;
   }
   .bodycontainer .productpage .col-sm-10 .custome-carousel .carousel-inner .item .overall .big .bigimg a {
-    bottom: 35px;
+    bottom: 20px;
     right: 20px;
     padding: 9px 0px 0px 12px;
     width: 40px;
@@ -2769,16 +2775,17 @@ body {
     margin: 10px 0px 10px 0px;
   }
   .bodycontainer .productpage .col-sm-10 .custome-carousel .carousel-inner .item .overall .bigbody .itemdetails .buybtn span {
-    padding: 4px 10px;
+    padding: 5px 15px;
     font-size: 12px;
     line-height: 18px;
     margin: 0px 0px 10px 0px;
   }
   .bodycontainer .productpage .col-sm-10 .custome-carousel .carousel-inner .item .overall .bigbody .itemdetails .addtocart {
-    margin: 0px 0px 10px 0px;
-    padding: 10px 12px 10px 12px;
+    margin: 10px 7px 10px 0px;
+    padding: 10px 20px;
     font-size: 12px;
     line-height: 18px;
+    display: inline;
   }
   .bodycontainer .productpage .col-sm-10 .custome-carousel .carousel-inner .item .overall .bigbody .itemdetails .compare {
     font-size: 12px;
@@ -2794,13 +2801,13 @@ body {
     margin: 0px;
   }
   .bodycontainer .productpage .col-sm-10 .custome-carousel .carousel-control.left .onlyleft {
-    margin: 10px 0px 0px 70px;
+    margin: 10px 0px 0px 40px;
   }
   .bodycontainer .productpage .col-sm-10 .custome-carousel .carousel-control.right {
     margin: 0px;
   }
   .bodycontainer .productpage .col-sm-10 .custome-carousel .carousel-control.right .onlyright {
-    margin: 10px 0px 0px -360px;
+    margin: 10px 0px 0px -500px;
   }
   .bodycontainer .related {
     padding: 0px;
@@ -2859,15 +2866,15 @@ body {
   .bodycontainer .related .custome-carousel2 .file .onlyres {
     display: block;
   }
-  .bodycontainer .banner2 {
+  .bodycontainer .banner3 {
     padding: 65px 0px 0px 0px;
   }
-  .bodycontainer .banner2 h1 {
+  .bodycontainer .banner3 h1 {
     font-size: 18px;
     line-height: 24px;
     margin: 7px 0px 5px 0px;
   }
-  .bodycontainer .banner2 p {
+  .bodycontainer .banner3 p {
     font-size: 12px;
     line-height: 18px;
     margin: 0px;

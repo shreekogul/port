@@ -348,6 +348,7 @@ body{
             padding: 70px 0px;
             .single{
                 padding: 10px;
+                text-align: center;
                 h1{
                     font-size: 35px;
                     line-height: 41px;
@@ -361,6 +362,7 @@ body{
                         top: 7px;
                         left: 0px;
                         color: $orangered;
+                        display: inline-block;
                     }
                     img{
                         width: 30%;
@@ -885,12 +887,12 @@ body{
                 line-height: 28px;
                 margin: 0px 0px 20px 0px;
                 &::after{
-                    width: 20px;
+                    width: 30px;
                     height: 2px;
                     display: inline-block;
                     position: absolute;
-                    top: 67px;
-                    left: 131px;
+                    top: 62px;
+                    left: 40%;
                 }
             }
             .support {
@@ -967,6 +969,10 @@ body{
                     margin-top:10px;
                 }
                 .wedotext{
+                    position: absolute;
+                    top: -73px;
+                    left: 16px;
+                    width: 75%;
                     h3{
                         padding: 20px 25px 17px 20px;
                     }
@@ -1079,8 +1085,8 @@ body{
                 }
                 .fourtext{
                     width: 230px;
-                    top: 270px;
-                    left: 42px;  
+                    top: 340px;
+                    left: 85px;
                 }
             }
         }

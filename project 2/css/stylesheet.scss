@@ -1110,10 +1110,13 @@ body{
         .icon{
             font-size: 18px;
             line-height: 26px;
-            color: $white;
-            padding: 3px 8px;
+            color: white;
+            padding: 3px 7px;
             display: inline-block;
             margin-right: 7px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
             &:hover, &.active{
                 background: $green;
             }
@@ -2144,7 +2147,7 @@ body{
         padding: 0px 0px 6px 0px;
     }
     .custome-modal-dialog{
-        width: 300px;
+        width: auto;
         margin-top: 20px;
         .modal-content{
             margin: 40px 0px 0px 0px;
@@ -2495,10 +2498,11 @@ body{
                 margin: 0px 0px 0px 0px;
                 width: 100%;
                 .pics{
-                    width: 108px;
-                    padding: 28px 0px 0px 0px;
+                    width: 50%;
+                    padding: 0px;
                     margin-bottom: 10px;
                     overflow: hidden;
+                    min-height: 197px;
                     img{
                         width: 100%;
                         margin: 0px 0px 0px -3px;
@@ -2519,7 +2523,9 @@ body{
                     }
                 }
                 .pictext{
-                    width: 182px;
+                    width: 50%;
+                    min-height: 197px;
+                    padding: 10px;
                     p{
                         margin: 0px;
                         text-transform: capitalize;
@@ -2702,7 +2708,7 @@ body{
         }
         .banner2{
             background: url('../images/newsbg.webp') no-repeat 0px 0px/100%;
-            padding: 80px 0px 0px 5px;
+            padding: 85px 0px 0px 5px;
             margin: 0px;
             h1{
                 color: $black;
@@ -2729,7 +2735,7 @@ body{
     .footercontainer{
         margin: 20px -15px 0px -15px;
         background: url(../images/footer-bg.webp) no-repeat 0px 0px/100%;
-        padding: 100px 0px 0px 5px;
+        padding: 30% 0px 0px 5px;
         color: $black;
         .footbox1{
             width: 100%;
@@ -2869,7 +2875,7 @@ body{
                                             padding: 100px 0px 0px 0px;
                                         }
                                         a{
-                                            bottom: 35px;
+                                            bottom: 20px;
                                             right: 20px;
                                             padding: 9px 0px 0px 12px;
                                             width: 40px;
@@ -2917,17 +2923,18 @@ body{
                                             padding: 0px 0px 0px 5px;
                                             margin: 10px 0px 10px 0px;
                                             span{
-                                                padding: 4px 10px;
+                                                padding: 5px 15px;
                                                 font-size: 12px;
                                                 line-height: 18px;
                                                 margin: 0px 0px 10px 0px;
                                             }
                                         }
                                         .addtocart{
-                                            margin: 0px 0px 10px 0px;
-                                            padding: 10px 12px 10px 12px;
+                                            margin: 10px 7px 10px 0px;
+                                            padding: 10px 20px;
                                             font-size: 12px;
                                             line-height: 18px;
+                                            display: inline;
                                         }
                                         .compare{
                                             font-size: 12px;
@@ -2947,13 +2954,13 @@ body{
                     .carousel-control.left{
                         margin: 0px;
                         .onlyleft{
-                            margin: 10px 0px 0px 70px
+                            margin: 10px 0px 0px 40px
                         }
                     }
                     .carousel-control.right{
                         margin: 0px;
                         .onlyright{
-                            margin: 10px 0px 0px -360px;
+                            margin: 10px 0px 0px -500px;
                         }
 
                     }
@@ -3019,7 +3026,7 @@ body{
                 }
             }
         }
-        .banner2{
+        .banner3{
             padding: 65px 0px 0px 0px;
             h1{
                 font-size: 18px;

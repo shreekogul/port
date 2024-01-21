@@ -273,7 +273,9 @@ body{
             color:$paracolor2;
             margin: 40px 0px;
             a{
-                font-weight:bold;
+                font-weight: bold;
+                display: inline-block;
+                margin: 0px 0px 0px 5px;
             }
         }
     }
@@ -652,6 +654,7 @@ body{
         .headtext {
             margin-top: 7%;
             padding: 0% 0% 0% 0%;
+            text-align: center;
             h1{
                 font-size: 23px;
                 line-height: 29px;
@@ -695,9 +698,10 @@ body{
         .circle{
             width: 300px;
             height:300px;
-            margin: 10px 20px 20px 0px;
+            margin: 0px auto;
         }
         .circletext{
+            text-align: center;
             h1{
                 margin: 20px 0px 10px 0px;
                 text-align: center;
@@ -728,7 +732,7 @@ body{
             }
         }
         .company{
-            margin-top: 10px;
+            margin: 10px 0px 10px 50px;
             h1{
                 font-size: 22px;
                 line-height: 28px;
@@ -757,7 +761,7 @@ body{
                     margin: 35% 37% 0% 0%;
                 }
                 p{
-                    margin: 60px 0px 20px 0px;
+                    margin: 90px 0px 20px 0px;
                     color: $black;
                 }
                 .btn-primary{
@@ -785,14 +789,17 @@ body{
                 margin-bottom: 0px;
                 h3{
                     img{
-                        left: -71px;
-                        top: 17px;
+                        left: -91px;
+                        top: 0px;
                         width: 30%;
                     }
                 }
             }
             .lastline{
                 margin: 20px 0px 40px 0px;
+                a{
+                    margin: 10px 0px 0px 0px
+                }
             }
         }
        .bannercontainer{
@@ -808,6 +815,7 @@ body{
                 }
                 p{
                     margin: 20px 0px;
+                    text-align: center;
                 }
                 h2{
                     padding: 0px;
@@ -836,12 +844,19 @@ body{
                 }
             }
        }
+       .brands{
+            img{
+                width: 70%;
+                display: block;
+                margin: 10px 60px;
+            }
+       }
        .shop{
             .shopcircle{
                 background: url(../images/yellow.PNG) no-repeat -13px -2px/110%;
                 width: 300px;
                 height: 300px;
-                margin: 20px 0px 0px 0px;
+                margin: 20px auto;
             }
             .shoptext{
                 h1{
@@ -860,7 +875,7 @@ body{
             }
        }
         .headphone{
-            margin-bottom: 0px;
+            margin-bottom: 20px;
             .shoptext{
                 padding: 0px 0px 20px 0px;
                 h1{
@@ -875,7 +890,7 @@ body{
                 }
             }
             .headie{
-                background: url(../images/headie.PNG) no-repeat 10px 0px/100%;
+                background: url(../images/headie.PNG) no-repeat 30px -10px/90%;
                 padding-bottom: 300px;
             }
         }

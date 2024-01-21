@@ -322,6 +322,7 @@ body {
 }
 .bodycontainer .solocontainer .singlerow .single {
   padding: 10px;
+  text-align: center;
 }
 .bodycontainer .solocontainer .singlerow .single h1 {
   font-size: 35px;
@@ -337,6 +338,7 @@ body {
   top: 7px;
   left: 0px;
   color: orangered;
+  display: inline-block;
 }
 .bodycontainer .solocontainer .singlerow .single h1 img {
   width: 30%;
@@ -834,12 +836,12 @@ body {
     margin: 0px 0px 20px 0px;
   }
   .bodycontainer .businesscontainer h1::after {
-    width: 20px;
+    width: 30px;
     height: 2px;
     display: inline-block;
     position: absolute;
-    top: 67px;
-    left: 131px;
+    top: 62px;
+    left: 40%;
   }
   .bodycontainer .businesscontainer .support {
     margin: 20px 15px;
@@ -912,6 +914,12 @@ body {
   }
   .bodycontainer .whatwedo .threeimg .wedo {
     margin-top: 10px;
+  }
+  .bodycontainer .whatwedo .threeimg .wedotext {
+    position: absolute;
+    top: -73px;
+    left: 16px;
+    width: 75%;
   }
   .bodycontainer .whatwedo .threeimg .wedotext h3 {
     padding: 20px 25px 17px 20px;
@@ -1012,8 +1020,8 @@ body {
   }
   .bodycontainer .teamcontainer .fourimg .fourtext {
     width: 230px;
-    top: 270px;
-    left: 42px;
+    top: 340px;
+    left: 85px;
   }
   .bodycontainer .blogcontainer h1 {
     font-size: 16px;

@@ -809,20 +809,20 @@ body{
                 top: -16px;
                 text-shadow: none;
                 h1, h2, h3{
-                    font-size: 16px;
-                    line-height: 19px;
-                    margin: 0px;
+                    font-size: 20px;
+                    line-height: 26px;
+                    margin: 0px 0px 5px 0px;
                 }
                 p{
-                font-size: 10px;
-                line-height: 16px;
-                margin-bottom: 0px;
-                padding: 0px;
+                    font-size: 13px;
+                    line-height: 19px;
+                    margin-bottom: 6px;
+                    padding: 0px;
                 }
                 a{
                     font-size: 11px;
                     line-height: 19px;
-                    padding: 5px 20px;
+                    padding: 9px 18px;
                 }
             }
         }
@@ -839,7 +839,7 @@ body{
                     &::after{
                         width: 210px;
                         top: 40px;
-                        left: 40px;
+                        left: 21%;
                     }
                 }
             }
@@ -850,7 +850,7 @@ body{
                     &::after{
                         width: 190px;
                         top: 30px;
-                        left: 52px;
+                        left: 22%;
                     }
                 }
             }
@@ -861,7 +861,7 @@ body{
             margin-bottom: 30px;
             .right{
                 float: none;
-                padding-top: 140px;
+                padding-top: 165px;
                 h1{
                     font-size: 16px;
                     line-height: 23px;
@@ -916,7 +916,7 @@ body{
                     line-height: 22px;
                 }
                 a{
-                    margin: 0px 0px 0px 35px;
+                    margin: 0px 0px 0px 20%;
                 }
                 .projectmar{
                     .col-sm-6{
@@ -958,7 +958,7 @@ body{
                     margin-bottom: 20px;
                 }
                 .para{
-                    top: 210px;
+                    top: 260px;
                 }
             }
         }
@@ -991,6 +991,7 @@ body{
                 margin-bottom: 30px;
                 span{
                     padding: 9px 33px 7px 0px;
+                    bottom: 24%;
                 }
                 h2{
                     font-size: 17px;

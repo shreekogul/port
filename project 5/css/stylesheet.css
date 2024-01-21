@@ -756,20 +756,20 @@ body {
     text-shadow: none;
   }
   .bannercontainer .custome-carousel .carousel-caption h1, .bannercontainer .custome-carousel .carousel-caption h2, .bannercontainer .custome-carousel .carousel-caption h3 {
-    font-size: 16px;
-    line-height: 19px;
-    margin: 0px;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0px 0px 5px 0px;
   }
   .bannercontainer .custome-carousel .carousel-caption p {
-    font-size: 10px;
-    line-height: 16px;
-    margin-bottom: 0px;
+    font-size: 13px;
+    line-height: 19px;
+    margin-bottom: 6px;
     padding: 0px;
   }
   .bannercontainer .custome-carousel .carousel-caption a {
     font-size: 11px;
     line-height: 19px;
-    padding: 5px 20px;
+    padding: 9px 18px;
   }
   .bodycontainer .service img {
     margin-bottom: 30px;
@@ -783,7 +783,7 @@ body {
   .bodycontainer .service .offers h1::after {
     width: 210px;
     top: 40px;
-    left: 40px;
+    left: 21%;
   }
   .bodycontainer .service .offers2 h1 {
     padding: 0px 0px;
@@ -792,7 +792,7 @@ body {
   .bodycontainer .service .offers2 h1::after {
     width: 190px;
     top: 30px;
-    left: 52px;
+    left: 22%;
   }
   .bodycontainer .banner2 {
     background: url(../images/parallax-1.jpg) no-repeat -45px 0px/135%;
@@ -801,7 +801,7 @@ body {
   }
   .bodycontainer .banner2 .right {
     float: none;
-    padding-top: 140px;
+    padding-top: 165px;
   }
   .bodycontainer .banner2 .right h1 {
     font-size: 16px;
@@ -851,7 +851,7 @@ body {
     line-height: 22px;
   }
   .bodycontainer .projectcontainer .experience a {
-    margin: 0px 0px 0px 35px;
+    margin: 0px 0px 0px 20%;
   }
   .bodycontainer .projectcontainer .experience .projectmar .col-sm-6:nth-child(1) {
     border-right: 1px solid #dadae3;
@@ -879,7 +879,7 @@ body {
     margin-bottom: 20px;
   }
   .bodycontainer .teamcontainer .fourpic .para {
-    top: 210px;
+    top: 260px;
   }
   .bodycontainer .pricecontainer {
     margin-bottom: 2%;
@@ -912,6 +912,7 @@ body {
   }
   .bodycontainer .latestcontainer .blog span {
     padding: 9px 33px 7px 0px;
+    bottom: 24%;
   }
   .bodycontainer .latestcontainer .blog h2 {
     font-size: 17px;
