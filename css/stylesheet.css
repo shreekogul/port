@@ -128,10 +128,12 @@ body {
   overflow: hidden;
   min-height: 320px;
   margin: 0px 0px 0px 34%;
+  background-color: white;
 }
 #bodycontainer .intro .mypic img {
-  width: 100%;
+  width: 86%;
   display: block;
+  margin: 10px 0px 0px 20px;
 }
 #bodycontainer .intro .header-text {
   padding: 60px 0px 50px 50px;
@@ -243,15 +245,16 @@ body {
   min-height: 325px;
 }
 #bodycontainer .about .mypic2 img {
-  width: 90%;
+  width: 100%;
   display: block;
+  border-radius: 10px;
 }
 #bodycontainer .about .about-txt {
-  min-height: 315px;
+  min-height: 330px;
   display: none;
 }
 #bodycontainer .about .about-txt .ptext {
-  margin: 5px 0px 10px 0px;
+  margin: 5px 0px 12px 0px;
   font-size: 15px;
   line-height: 23px;
 }
@@ -465,6 +468,7 @@ body {
   padding: 20px;
   animation: mymove 1s;
   display: none;
+  cursor: pointer;
 }
 #bodycontainer .gallery .gallery-box .opacity h2 {
   margin: 0px;

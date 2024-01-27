@@ -142,9 +142,11 @@ body{
             overflow: hidden;
             min-height: 320px;
             margin: 0px 0px 0px 34%;
+            background-color: $white;
             img{
-                width: 100%;
+                width: 86%;
                 display: block;
+                margin: 10px 0px 0px 20px;
             }
         }
         .header-text{
@@ -258,15 +260,16 @@ body{
         .mypic2{
             min-height: 325px;
             img{
-                width: 90%;
+                width: 100%;
                 display: block;
+                border-radius: 10px;
             }
         }
         .about-txt{
-            min-height: 315px;
+            min-height: 330px;
             display: none;
             .ptext{
-                margin: 5px 0px 10px 0px;
+                margin: 5px 0px 12px 0px;
                 font-size: 15px;
                 line-height: 23px;
                 span{
@@ -482,6 +485,7 @@ body{
                 padding: 20px;
                 animation: mymove 1s;
                 display: none;
+                cursor: pointer;
                 h2{
                     margin: 0px;
                     font-size: 20px;
