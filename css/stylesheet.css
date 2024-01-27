@@ -582,9 +582,11 @@ body {
   #headercontainer .custom-navbar .navbar-header .navbar-toggle {
     top: -30px;
   }
-  #headercontainer .custom-navbar .nav {
+  #headercontainer .custom-navbar .navbar-collapse {
+    width: 100%;
+  }
+  #headercontainer .custom-navbar .navbar-collapse .nav {
     border: 2px solid #b79a09;
-    width: 110%;
     padding-left: 10px;
   }
   #bodycontainer .intro .mypic {

@@ -602,13 +602,21 @@ body{
 //RESPONSIVE VIEW//
 @media(min-width:320px) and (max-width:480px)
 {
-    #headercontainer .custom-navbar .navbar-header .navbar-toggle{
-        top: -30px;
-    }
-    #headercontainer .custom-navbar .nav{
-        border: 2px solid $brdrgold;
-        width: 110%;
-        padding-left: 10px;
+    #headercontainer{
+        .custom-navbar{
+            .navbar-header{
+                .navbar-toggle{
+                    top: -30px;
+                }
+            }
+            .navbar-collapse{
+                width: 100%;
+                .nav{
+                    border: 2px solid $brdrgold;
+                    padding-left: 10px;   
+                }
+            }
+        }
     }
     #bodycontainer{
         .intro{
